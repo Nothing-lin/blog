@@ -107,7 +107,10 @@ deploy:
   repo: https://github.com/Nothing-lin/blog.git
   branch: master
   
+  
+  # 备份我的hexo博客
 backup:
     type: git
+    theme: even
     repository:
        github: https://github.com/Nothing-lin/blog.git,branchName
