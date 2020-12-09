@@ -47,3 +47,5 @@ More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
 **这是测试粗体字**
 
 [独大的](。)
+
+![](D:\工作区\typora截图\f6SlhTvBckL1eOW.png)
