@@ -1,268 +1,563 @@
+
+
 <!DOCTYPE html>
-<html lang="zh-CN">
-  <head><meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<html lang="zh-CN" data-default-color-scheme=&#34;light&#34;>
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
 
-<meta name="theme-color" content="#f8f5ec" />
-<meta name="msapplication-navbutton-color" content="#f8f5ec">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#393e46">
+  
+    <meta name="description" content="以前不是很喜欢用typora，虽然第一次发现它的时候感觉挺好用的，但是还是由于一开始对它的不了解而把它搁置下来了。">
+  
+  <meta name="author" content="NothingLin">
+  <meta name="keywords" content="">
+  
+  <title>我最喜欢的markdown编辑器--Typora - Nothinglin的个人博客</title>
 
-<meta name="description" content="我最喜欢的markdown编辑器--Typora"/><meta name="keywords" content="Tools, Nothinglin的个人博客" /><link rel="alternate" href="/atom.xml" title="Nothinglin的个人博客" type="application/atom+xml"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.11.0" />
-<link rel="canonical" href="https://nothinglin.top/2020/11/26/我最喜欢的markdown编辑器/"/>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
 
-<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.11.0" />
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
 
-<script id="baidu_push">
-(function(){
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-    }
-    else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-    }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
-</script>
-<script src="//cdn1.lncld.net/static/js/3.1.1/av-min.js"></script>
-  <script id="leancloud">
-    AV.init({
-      appId: "hfm5Ni684iVoS9xVlzOy7y1i-gzGzoHsz",
-      appKey: "wxu7XEemWYyyELd4xIa2uGXU"
-    });
-  </script><script>
-  window.config = {"leancloud":{"app_id":"hfm5Ni684iVoS9xVlzOy7y1i-gzGzoHsz","app_key":"wxu7XEemWYyyELd4xIa2uGXU"},"toc":true,"fancybox":false,"pjax":"","latex":false};
-</script>
+  
+    
+    
+      
+      
+        
+          
+        
+        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/themes/prism.min.css" />
+      
+      
+        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/plugins/line-numbers/prism-line-numbers.min.css" />
+      
+    
+  
 
-    <title>我最喜欢的markdown编辑器--Typora - Nothinglin的个人博客</title>
-  <meta name="generator" content="Hexo 5.2.0"></head>
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
 
-  <body><div id="mobile-navbar" class="mobile-navbar">
-  <div class="mobile-header-logo">
-    <a href="/." class="logo">Nothinglin的个人博客</a>
-  </div>
-  <div class="mobile-navbar-icon">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</div>
 
-<nav id="mobile-menu" class="mobile-menu slideout-menu">
-  <ul class="mobile-menu-list"><a href="/">
-        <li class="mobile-menu-item">首页
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"nothinglin.top","root":"/","version":"1.8.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Nothinglin的个人博客" type="application/atom+xml">
+</head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Nothinglin个人博客</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
           </li>
-      </a><a href="/tags/">
-        <li class="mobile-menu-item">标签
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
           </li>
-      </a></ul>
-</nav>
-<div class="container" id="mobile-panel">
-      <header id="header" class="header"><div class="logo-wrapper">
-  <a href="/." class="logo">Nothinglin的个人博客</a>
-</div>
-
-<nav class="site-navbar"><ul id="menu" class="menu"><li class="menu-item">
-          <a class="menu-item-link" href="/">
-            首页
-            </a>
-        </li>
-      <li class="menu-item">
-          <a class="menu-item-link" href="/tags/">
-            标签
-            </a>
-        </li>
-      </ul></nav>
-</header>
-
-      <main id="main" class="main">
-        <div class="content-wrapper">
-          <div id="content" class="content"><article class="post">
-    <header class="post-header">
-      <h1 class="post-title">我最喜欢的markdown编辑器--Typora
-        </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2020-11-26
-        </span><span class="post-visits"
-             data-url="/2020/11/26/%E6%88%91%E6%9C%80%E5%96%9C%E6%AC%A2%E7%9A%84markdown%E7%BC%96%E8%BE%91%E5%99%A8/"
-             data-title="我最喜欢的markdown编辑器--Typora">
-          阅读次数 0
-        </span>
-        </div>
-    </header>
-
-    <div class="post-toc" id="post-toc">
-    <h2 class="post-toc-title">文章目录</h2>
-    <div class="post-toc-content">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BDTypora"><span class="toc-text">下载Typora</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E4%B8%BB%E9%A2%98"><span class="toc-text">下载主题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%B4%E6%98%8E"><span class="toc-text">说明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E4%B8%BB%E9%A2%98%E5%92%8C%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98"><span class="toc-text">下载主题和配置主题</span></a></li></ol>
+        
+      </ul>
     </div>
-  </div><div class="post-content"><p>以前不是很喜欢用typora，虽然第一次发现它的时候感觉挺好用的，但是还是由于一开始对它的不了解而把它搁置下来了。   <a id="more"></a>我那时很迷恋静态博客，感觉很有个性的个人网站，重要的是因为它可以部署到GitHub、gitee、coding上，免费！</p>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="我最喜欢的markdown编辑器--Typora">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2020-11-26 01:05" pubdate>
+        2020年11月26日 凌晨
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.3k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      12
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">我最喜欢的markdown编辑器--Typora</h1>
+            
+            <div class="markdown-body">
+              <p>以前不是很喜欢用typora，虽然第一次发现它的时候感觉挺好用的，但是还是由于一开始对它的不了解而把它搁置下来了。   <a id="more"></a>我那时很迷恋静态博客，感觉很有个性的个人网站，重要的是因为它可以部署到GitHub、gitee、coding上，免费！</p>
 <p>静态博客有一个很重要的特点就是文章是使用markdown语法来写的，我那时候就是搜索markdown编辑搜到typora这个软件的。但是怎么感觉和我印象中的markdown不大一样？这个更像富文本编辑器，由于一开始我就是奔着markdown编辑模式去的，所以在一开始的时候还是挺嫌弃typora的。</p>
 <p>最重要的是那时候typora的主题让我很难受，我去官网主题上看了很多次都没有合适自己的。这样我在编辑的时候由于排版不大美观，我最后准备把它卸载掉的。但是网上各个博主都说typora是最简约和最唯美的markdown编辑，所以我就暂时留着它。主要是我当时是很喜欢标准的markdown那种编辑模式：<code>左边编辑、右边浏览</code>。</p>
-<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005331.png" alt="image-20201125233807481"></p>
+<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005331.png" srcset="/img/loading.gif" alt="image-20201125233807481"></p>
 <p>而typaro更像一个富文本编辑器：</p>
-<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005339.png" alt="image-20201125234312136"></p>
+<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005339.png" srcset="/img/loading.gif" alt="image-20201125234312136"></p>
 <p>主要是它的这些文本排版显示看着有一些不舒服，没有写作欲望。<code>（只是我的个人感受）</code></p>
 <p>大概是搁置了半年多吧，没想到偶然地逛了逛官网主题，还想挣扎一下typora，毕竟他也确实有着一些不可被替代地优势。我只是不满意内容排版，其他地大可还好。</p>
 <p>没想到官网又退出了许多新主题，我就逐一地看了一遍。</p>
 <blockquote>
 <p>我特别希望怎样地排版？</p>
 </blockquote>
-<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005345.png" alt="image-20201125235102587"></p>
+<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005345.png" srcset="/img/loading.gif" alt="image-20201125235102587"></p>
 <p>就是能够有纸张地那种轮廓，好像有一张纸垫在桌子上地那种感觉，而不是白茫茫地一片或者黑漆漆的一片，里面再加一些文本内容。这样看起来总觉得有些不舒服，不知道读者们有没有这种感受。就是最起码要有一种轮廓将文本内容围起来。</p>
 <p>有点抽象？</p>
-<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005353.png" alt="image-20201125235620720"></p>
+<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005353.png" srcset="/img/loading.gif" alt="image-20201125235620720"></p>
 <p>大概就是这种阅读体验和编辑体验，选择标准的markdown编辑的编辑模式也是因为左边的预览部分能够让自己看着很舒服。</p>
-<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005358.png" alt="image-20201126000039006"></p>
+<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005358.png" srcset="/img/loading.gif" alt="image-20201126000039006"></p>
 <p>你看，这种编辑的舒适感是不是让你的创作激情四飞？可惜这个是macdown编辑器，需要苹果的mac系统才能运行，我也没发现与之相美观的markdown编辑器，只好长叹息以掩涕兮了。</p>
 <p>不过我在浏览typora主题的过程中，发现了一个主题：</p>
-<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005407.png" alt="image-20201126000521176"></p>
+<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005407.png" srcset="/img/loading.gif" alt="image-20201126000521176"></p>
 <p>看到明显的纸张轮廓了吗？我想要的就是这种编辑的阅读体验感。</p>
 <p>typora有一个优点就是开源，我们可以自定义修改一下typora编辑器的CSS样式样式就行了。</p>
 <p>给你们看看我修改后的样子：</p>
-<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005413.png" alt="image-20201126000846741"></p>
+<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005413.png" srcset="/img/loading.gif" alt="image-20201126000846741"></p>
 <p>额嗯…我不知道你们觉得好不好看，不过我感觉我看得挺舒服的，很有写作的欲望！</p>
 <p>这个当然只是本地编辑的阅读样式，提交到博客后就不是这个样式了。不过也不差，博客的主题我也是挺喜欢的。我的编辑风格只要相统一就行了。</p>
 <h2 id="下载Typora"><a href="#下载Typora" class="headerlink" title="下载Typora"></a>下载Typora</h2><p>这个软件是开源的，不收费，如果你是大神的话还可以自定义修改它的样式。设计一套符合自己的主题。</p>
 <p>官网地址：<a target="_blank" rel="noopener" href="https://typora.io/">点击我进入官网</a></p>
 <h2 id="下载主题"><a href="#下载主题" class="headerlink" title="下载主题"></a>下载主题</h2><p>主题地址：<a target="_blank" rel="noopener" href="http://theme.typora.io/">点击我进入官网主题</a></p>
 <h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>可能你刚下载之后得到typora的样子是长这样的：</p>
-<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005422.png" alt="image-20201126001755160"></p>
+<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005422.png" srcset="/img/loading.gif" alt="image-20201126001755160"></p>
 <blockquote>
 <p>如何设置为一体化样式？</p>
 </blockquote>
-<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005425.gif" alt="semantic演示"></p>
+<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005425.gif" srcset="/img/loading.gif" alt="semantic演示"></p>
 <blockquote>
 <p>可以在偏好设置中设置为一体化之后会挺美观的，不过这个也挺不错的，你可以了解一下它的编辑功能。</p>
 </blockquote>
-<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005444.gif" alt="semantic演示"></p>
-<h2 id="下载主题和配置主题"><a href="#下载主题和配置主题" class="headerlink" title="下载主题和配置主题"></a>下载主题和配置主题</h2><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126103127.png" alt="image-20201126002940893"></p>
-<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005454.png" alt="image-20201126003038671"></p>
-<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005459.png" alt="image-20201126003417064"></p>
+<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005444.gif" srcset="/img/loading.gif" alt="semantic演示"></p>
+<h2 id="下载主题和配置主题"><a href="#下载主题和配置主题" class="headerlink" title="下载主题和配置主题"></a>下载主题和配置主题</h2><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126103127.png" srcset="/img/loading.gif" alt="image-20201126002940893"></p>
+<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005454.png" srcset="/img/loading.gif" alt="image-20201126003038671"></p>
+<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005459.png" srcset="/img/loading.gif" alt="image-20201126003417064"></p>
 <blockquote>
 <p>打开主题文件夹</p>
 </blockquote>
-<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005531.png" alt="semantic演示"></p>
+<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005531.png" srcset="/img/loading.gif" alt="semantic演示"></p>
 <blockquote>
 <p>直接把那两个文件放入主题文件夹中就行了</p>
 </blockquote>
-<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005531.png" alt="image-20201126003743414"></p>
-<img src="https://NothingLin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005610.gif" alt="semantic演示" style="zoom: 80%;" />
+<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005531.png" srcset="/img/loading.gif" alt="image-20201126003743414"></p>
+<img src="https://NothingLin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005610.gif" srcset="/img/loading.gif" alt="semantic演示" style="zoom: 80%;" />
 
 
 
 <blockquote>
 <p>默认的主题样式是这样的：</p>
 </blockquote>
-<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005604.png" alt="image-20201126000521176"></p>
+<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005604.png" srcset="/img/loading.gif" alt="image-20201126000521176"></p>
 <blockquote>
 <p>我不想要这个白色的背景，可以自行准备一张背景图片。该主题中的背景是一张重复网格的背景图片，我们只需要更换一个背景图片就行了。</p>
 </blockquote>
-<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005629.gif" alt="semantic演示"></p>
+<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005629.gif" srcset="/img/loading.gif" alt="semantic演示"></p>
 <blockquote>
 <p>需要说明的是，背景图片是那个名为light_wool.png的图片，只需要上传一张图片，把该图片的名字换成light_wool.png即可，替换掉原来的那张照片。</p>
 </blockquote>
 <p><strong>最终的效果图如下：</strong></p>
-<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005643.png" alt="image-20201126004656233"></p>
+<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126005643.png" srcset="/img/loading.gif" alt="image-20201126004656233"></p>
 <p>其实关于Typora我还有很多其他想要讲的使用技巧，但是我并不想这篇文章的内容太长。我可以考虑一下后面再分享一下我使用typora的一些技巧和心得体会。</p>
 <p>这篇文章暂时就这么多先吧。</p>
 <p>我是NothingLin，苦逼的学生仔。</p>
 <p><strong><em>《2020/11/26》</em></strong></p>
-<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126105010.png" alt="image-20201126105007791"></p>
+<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126105010.png" srcset="/img/loading.gif" alt="image-20201126105007791"></p>
 
-      </div>
-      <div class="post-copyright">
-    <p class="copyright-item">
-      <span>原文作者: </span>
-      <a href="https://nothinglin.top">NothingLin</a>
-    </p>
-    <p class="copyright-item">
-      <span>原文链接: </span>
-      <a href="https://nothinglin.top/2020/11/26/%E6%88%91%E6%9C%80%E5%96%9C%E6%AC%A2%E7%9A%84markdown%E7%BC%96%E8%BE%91%E5%99%A8/">https://nothinglin.top/2020/11/26/%E6%88%91%E6%9C%80%E5%96%9C%E6%AC%A2%E7%9A%84markdown%E7%BC%96%E8%BE%91%E5%99%A8/</a>
-    </p>
-    <p class="copyright-item">
-      <span>许可协议: </span><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>
-    </p>
-  </div>
-      <footer class="post-footer">
-        <div class="post-tags">
-            <a href="/tags/Tools/">Tools</a>
             </div>
-        
-        <nav class="post-nav"><a class="prev" href="/2020/11/28/%E6%88%91%E6%9C%80%E5%96%9C%E6%AC%A2%E7%9A%84PDF%E5%88%86%E4%BA%AB%E7%BD%91%E7%AB%99-MaiPDF/">
-        <i class="iconfont icon-left"></i>
-        <span class="prev-text nav-default">我最喜欢的PDF分享网站--MaiPDF</span>
-        <span class="prev-text nav-mobile">上一篇</span>
-      </a>
-    <a class="next" href="/2016/06/01/hello-world/">
-        <span class="next-text nav-default">Hello World</span>
-        <span class="prev-text nav-mobile">下一篇</span>
-        <i class="iconfont icon-right"></i>
-      </a>
-    </nav></footer>
-    </article></div>
-  <div class="comments" id="comments">
-    
-      <div id="vcomments"></div>
-    
-  </div>
-</div>
-      </main>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/Tools/">Tools</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2020/11/28/%E6%88%91%E6%9C%80%E5%96%9C%E6%AC%A2%E7%9A%84PDF%E5%88%86%E4%BA%AB%E7%BD%91%E7%AB%99-MaiPDF/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">我最喜欢的PDF分享网站--MaiPDF</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2016/06/01/hello-world/">
+                        <span class="hidden-mobile">Hello World</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
 
-      <footer id="footer" class="footer"><div class="social-links"><a href="mailto:1353695200@qq.com" class="iconfont icon-email" title="email"></a>
-        <a target="_blank" rel="noopener" href="https://github.com/nothing-lin" class="iconfont icon-github" title="github"></a>
-        <a href="/atom.xml" class="iconfont icon-rss" title="rss"></a>
-    </div><div class="copyright">
-  <span class="power-by">
-    由 <a class="hexo-link" target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> 强力驱动
-  </span>
-  <span class="division">|</span>
-  <span class="theme-info">
-    主题 - 
-    <a class="theme-link" target="_blank" rel="noopener" href="https://github.com/ahonn/hexo-theme-even">Even</a>
-  </span>
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                  
+                
+                
+  <div id="vcomments"></div>
+  <script type="text/javascript">
+    Fluid.utils.waitElementVisible('vcomments', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#vcomments",
+          app_id: "hfm5Ni684iVoS9xVlzOy7y1i-gzGzoHsz",
+          app_key: "wxu7XEemWYyyELd4xIa2uGXU",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
 
-  <span class="copyright-year">&copy;2020 - 2021<span class="heart">
-      <i class="iconfont icon-heart"></i>
-    </span>
-    <span class="author">NothingLin</span>
-  </span>
-</div>
-</footer>
 
-      <div class="back-to-top" id="back-to-top">
-        <i class="iconfont icon-up"></i>
+              </article>
+            
+          </article>
+        </div>
       </div>
     </div>
     
-<!-- valine Comments -->
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//cdn.jsdelivr.net/gh/xcss/valine@v1.1.7/dist/Valine.min.js"></script>
-<script type="text/javascript">
-    new Valine({
-        el: '#vcomments',
-        notify: false,
-        verify: false,
-        app_id: "hfm5Ni684iVoS9xVlzOy7y1i-gzGzoHsz",
-        app_key: "wxu7XEemWYyyELd4xIa2uGXU",
-        placeholder: "这里可以留言哦",
-        avatar: 'mm'
-    });
-</script>
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
 
-<script type="text/javascript" src="/lib/jquery/jquery.min.js"></script>
-  <script type="text/javascript" src="/lib/slideout/slideout.js"></script>
-  <script type="text/javascript" src="/js/src/even.js?v=2.11.0"></script>
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+<!-- SCRIPTS -->
+
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+    
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+
 </body>
 </html>

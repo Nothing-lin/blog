@@ -1,113 +1,245 @@
+
+
 <!DOCTYPE html>
-<html lang="zh-CN">
-  <head><meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<html lang="zh-CN" data-default-color-scheme=&#34;light&#34;>
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
 
-<meta name="theme-color" content="#f8f5ec" />
-<meta name="msapplication-navbutton-color" content="#f8f5ec">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#393e46">
+  
+    <meta name="description" content="MaiPDF是什么？我想大家第一反应就是思考这个问题。">
+  
+  <meta name="author" content="NothingLin">
+  <meta name="keywords" content="">
+  
+  <title>我最喜欢的PDF分享网站--MaiPDF - Nothinglin的个人博客</title>
 
-<meta name="description" content="我最喜欢的PDF分享网站--MaiPDF"/><meta name="keywords" content="Tools, Nothinglin的个人博客" /><link rel="alternate" href="/atom.xml" title="Nothinglin的个人博客" type="application/atom+xml"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.11.0" />
-<link rel="canonical" href="https://nothinglin.top/2020/11/28/我最喜欢的PDF分享网站-MaiPDF/"/>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
 
-<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.11.0" />
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
 
-<script id="baidu_push">
-(function(){
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-    }
-    else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-    }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
-</script>
-<script src="//cdn1.lncld.net/static/js/3.1.1/av-min.js"></script>
-  <script id="leancloud">
-    AV.init({
-      appId: "hfm5Ni684iVoS9xVlzOy7y1i-gzGzoHsz",
-      appKey: "wxu7XEemWYyyELd4xIa2uGXU"
-    });
-  </script><script>
-  window.config = {"leancloud":{"app_id":"hfm5Ni684iVoS9xVlzOy7y1i-gzGzoHsz","app_key":"wxu7XEemWYyyELd4xIa2uGXU"},"toc":true,"fancybox":false,"pjax":"","latex":false};
-</script>
+  
+    
+    
+      
+      
+        
+          
+        
+        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/themes/prism.min.css" />
+      
+      
+        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/plugins/line-numbers/prism-line-numbers.min.css" />
+      
+    
+  
 
-    <title>我最喜欢的PDF分享网站--MaiPDF - Nothinglin的个人博客</title>
-  <meta name="generator" content="Hexo 5.2.0"></head>
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
 
-  <body><div id="mobile-navbar" class="mobile-navbar">
-  <div class="mobile-header-logo">
-    <a href="/." class="logo">Nothinglin的个人博客</a>
-  </div>
-  <div class="mobile-navbar-icon">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</div>
 
-<nav id="mobile-menu" class="mobile-menu slideout-menu">
-  <ul class="mobile-menu-list"><a href="/">
-        <li class="mobile-menu-item">首页
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"nothinglin.top","root":"/","version":"1.8.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Nothinglin的个人博客" type="application/atom+xml">
+</head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Nothinglin个人博客</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
           </li>
-      </a><a href="/tags/">
-        <li class="mobile-menu-item">标签
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
           </li>
-      </a></ul>
-</nav>
-<div class="container" id="mobile-panel">
-      <header id="header" class="header"><div class="logo-wrapper">
-  <a href="/." class="logo">Nothinglin的个人博客</a>
-</div>
-
-<nav class="site-navbar"><ul id="menu" class="menu"><li class="menu-item">
-          <a class="menu-item-link" href="/">
-            首页
-            </a>
-        </li>
-      <li class="menu-item">
-          <a class="menu-item-link" href="/tags/">
-            标签
-            </a>
-        </li>
-      </ul></nav>
-</header>
-
-      <main id="main" class="main">
-        <div class="content-wrapper">
-          <div id="content" class="content"><article class="post">
-    <header class="post-header">
-      <h1 class="post-title">我最喜欢的PDF分享网站--MaiPDF
-        </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2020-11-28
-        </span><span class="post-visits"
-             data-url="/2020/11/28/%E6%88%91%E6%9C%80%E5%96%9C%E6%AC%A2%E7%9A%84PDF%E5%88%86%E4%BA%AB%E7%BD%91%E7%AB%99-MaiPDF/"
-             data-title="我最喜欢的PDF分享网站--MaiPDF">
-          阅读次数 0
-        </span>
-        </div>
-    </header>
-
-    <div class="post-toc" id="post-toc">
-    <h2 class="post-toc-title">文章目录</h2>
-    <div class="post-toc-content">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8MaiPDF%E7%9A%84%E8%83%8C%E6%99%AF"><span class="toc-text">使用MaiPDF的背景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MaiPDF"><span class="toc-text">MaiPDF</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81%E4%B8%8A%E4%BC%A0pdf"><span class="toc-text">1、上传pdf</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81%E5%88%86%E4%BA%AB%E8%AE%BE%E7%BD%AE"><span class="toc-text">2、分享设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81%E8%8E%B7%E5%8F%96%E5%88%86%E4%BA%AB%E9%93%BE%E6%8E%A5"><span class="toc-text">3、获取分享链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4%E3%80%81%E9%98%85%E8%AF%BB%E4%BD%93%E9%AA%8C"><span class="toc-text">4、阅读体验</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5%E3%80%81%E5%88%86%E4%BA%AB%E7%9A%84pdf%E7%BB%AD%E6%9C%9F"><span class="toc-text">5、分享的pdf续期</span></a></li></ol></li></ol>
+        
+      </ul>
     </div>
-  </div><div class="post-content"><p>MaiPDF是什么？我想大家第一反应就是思考这个问题。<a id="more"></a>我先讲一下我是怎么找到这个网站的吧。</p>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="我最喜欢的PDF分享网站--MaiPDF">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2020-11-28 23:51" pubdate>
+        2020年11月28日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.2k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      22
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">我最喜欢的PDF分享网站--MaiPDF</h1>
+            
+            <div class="markdown-body">
+              <p>MaiPDF是什么？我想大家第一反应就是思考这个问题。<a id="more"></a>我先讲一下我是怎么找到这个网站的吧。</p>
 <h2 id="使用MaiPDF的背景"><a href="#使用MaiPDF的背景" class="headerlink" title="使用MaiPDF的背景"></a>使用MaiPDF的背景</h2><p>最近想要在公众号上分享学习笔记之类的文章，到目前为止一直都在筹备着，做好一切的准备之后才开始公众号笔记分享之路。</p>
 <p>为了能更好地整理文章，我搭建了这一个博客进行文章的分类和整理，同时我也准备了gitbook这一个只是仓库来存放我的笔记文章，或者说高大上一点就是博客笔记。</p>
 <p>现在博客网站也准备好了，学习各种工具和学习资源也都准备好了。</p>
@@ -157,21 +289,21 @@
 <p>但是他们的阅读体验是真的不好！</p>
 <p>最后我发现了MaiPDF，把要分享的文件上传到它那里，然后获取分享链接分享出去。</p>
 <p>我测试了阅读体验，还不错，不过这个网站分享在线pdf有一个特点就是，它在分享的同时也提供了保护机制，防止你截图。在手机端还好吧，在电脑阅读分享出的pdf后，只要鼠标不在阅读区域，那么内容就会自动消失。</p>
-<h2 id="MaiPDF"><a href="#MaiPDF" class="headerlink" title="MaiPDF"></a>MaiPDF</h2><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/29/20201129012638.png" alt="image-20201129010331864"></p>
-<h3 id="1、上传pdf"><a href="#1、上传pdf" class="headerlink" title="1、上传pdf"></a>1、上传pdf</h3><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/29/20201129012649.png" alt="image-20201129010443620"></p>
-<h3 id="2、分享设置"><a href="#2、分享设置" class="headerlink" title="2、分享设置"></a>2、分享设置</h3><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/29/20201129012654.png" alt="image-20201129010725491"></p>
+<h2 id="MaiPDF"><a href="#MaiPDF" class="headerlink" title="MaiPDF"></a>MaiPDF</h2><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/29/20201129012638.png" srcset="/img/loading.gif" alt="image-20201129010331864"></p>
+<h3 id="1、上传pdf"><a href="#1、上传pdf" class="headerlink" title="1、上传pdf"></a>1、上传pdf</h3><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/29/20201129012649.png" srcset="/img/loading.gif" alt="image-20201129010443620"></p>
+<h3 id="2、分享设置"><a href="#2、分享设置" class="headerlink" title="2、分享设置"></a>2、分享设置</h3><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/29/20201129012654.png" srcset="/img/loading.gif" alt="image-20201129010725491"></p>
 <ul>
 <li>可打开的次数是，你可以自定义这个pdf能够被打开几次？当打开的次数用完之后该pdf就会被删除，没用完的情况下可以保存5个月，续期的后下面会讲到。</li>
 <li>可以设置阅读时长。</li>
 <li>点击生成阅读链接</li>
 </ul>
-<h3 id="3、获取分享链接"><a href="#3、获取分享链接" class="headerlink" title="3、获取分享链接"></a>3、获取分享链接</h3><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/29/20201129012658.png" alt="image-20201129011150818"></p>
+<h3 id="3、获取分享链接"><a href="#3、获取分享链接" class="headerlink" title="3、获取分享链接"></a>3、获取分享链接</h3><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/29/20201129012658.png" srcset="/img/loading.gif" alt="image-20201129011150818"></p>
 <ul>
 <li>复制阅读链接就可以直接分享了。</li>
 <li>下面的阅读码和修改码很重要，这是关于你这个文件后期要续期的时候用的，对于重要的文件分享要做好记录，以免后期不能对文件续期。</li>
 </ul>
-<h3 id="4、阅读体验"><a href="#4、阅读体验" class="headerlink" title="4、阅读体验"></a>4、阅读体验</h3><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/29/20201129014646.png" alt="image-20201129013449556"></p>
-<h3 id="5、分享的pdf续期"><a href="#5、分享的pdf续期" class="headerlink" title="5、分享的pdf续期"></a>5、分享的pdf续期</h3><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/29/20201129014641.png" alt="image-20201129011955985"></p>
+<h3 id="4、阅读体验"><a href="#4、阅读体验" class="headerlink" title="4、阅读体验"></a>4、阅读体验</h3><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/29/20201129014646.png" srcset="/img/loading.gif" alt="image-20201129013449556"></p>
+<h3 id="5、分享的pdf续期"><a href="#5、分享的pdf续期" class="headerlink" title="5、分享的pdf续期"></a>5、分享的pdf续期</h3><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/29/20201129014641.png" srcset="/img/loading.gif" alt="image-20201129011955985"></p>
 <p>因为上传的文件会自动在5个月之后会被系统删除，所以在过期之前回来续期一次又可以有5个月的保存时间。</p>
 <blockquote>
 <p>注意：新旧阅读码和修改码需要保持一致</p>
@@ -179,90 +311,253 @@
 <p>这一个网站对于我的笔记分享来说起到一个非常关键的作用，我以后学习就不用copy教材了，直接把教材分享出来，直接记录自己的疑难杂症，我觉得这样更高效，这样配合费曼技巧更合适和更高效。</p>
 <p>好了，今天就暂时分享这么多先。如果喜欢我的话，可以关注公众号。</p>
 <p>我是Nothinglin，苦逼的学生仔。</p>
-<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126105010.png" alt="image-20201126105007791"></p>
+<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/11/26/20201126105010.png" srcset="/img/loading.gif" alt="image-20201126105007791"></p>
 
-      </div>
-      <div class="post-copyright">
-    <p class="copyright-item">
-      <span>原文作者: </span>
-      <a href="https://nothinglin.top">NothingLin</a>
-    </p>
-    <p class="copyright-item">
-      <span>原文链接: </span>
-      <a href="https://nothinglin.top/2020/11/28/%E6%88%91%E6%9C%80%E5%96%9C%E6%AC%A2%E7%9A%84PDF%E5%88%86%E4%BA%AB%E7%BD%91%E7%AB%99-MaiPDF/">https://nothinglin.top/2020/11/28/%E6%88%91%E6%9C%80%E5%96%9C%E6%AC%A2%E7%9A%84PDF%E5%88%86%E4%BA%AB%E7%BD%91%E7%AB%99-MaiPDF/</a>
-    </p>
-    <p class="copyright-item">
-      <span>许可协议: </span><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>
-    </p>
-  </div>
-      <footer class="post-footer">
-        <div class="post-tags">
-            <a href="/tags/Tools/">Tools</a>
             </div>
-        
-        <nav class="post-nav"><a class="prev" href="/2020/11/29/%E5%8F%91%E7%8E%B0%E6%96%B0%E5%A4%A7%E9%99%86%EF%BC%8C%E5%BC%80%E6%BA%90%E5%9B%BE%E8%A1%A8%E6%A1%86%E6%9E%B6-ECharts/">
-        <i class="iconfont icon-left"></i>
-        <span class="prev-text nav-default">发现新大陆，开源图表框架--ECharts</span>
-        <span class="prev-text nav-mobile">上一篇</span>
-      </a>
-    <a class="next" href="/2020/11/26/%E6%88%91%E6%9C%80%E5%96%9C%E6%AC%A2%E7%9A%84markdown%E7%BC%96%E8%BE%91%E5%99%A8/">
-        <span class="next-text nav-default">我最喜欢的markdown编辑器--Typora</span>
-        <span class="prev-text nav-mobile">下一篇</span>
-        <i class="iconfont icon-right"></i>
-      </a>
-    </nav></footer>
-    </article></div>
-  <div class="comments" id="comments">
-    
-      <div id="vcomments"></div>
-    
-  </div>
-</div>
-      </main>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/Tools/">Tools</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2020/11/29/%E5%8F%91%E7%8E%B0%E6%96%B0%E5%A4%A7%E9%99%86%EF%BC%8C%E5%BC%80%E6%BA%90%E5%9B%BE%E8%A1%A8%E6%A1%86%E6%9E%B6-ECharts/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">发现新大陆，开源图表框架--ECharts</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2020/11/26/%E6%88%91%E6%9C%80%E5%96%9C%E6%AC%A2%E7%9A%84markdown%E7%BC%96%E8%BE%91%E5%99%A8/">
+                        <span class="hidden-mobile">我最喜欢的markdown编辑器--Typora</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
 
-      <footer id="footer" class="footer"><div class="social-links"><a href="mailto:1353695200@qq.com" class="iconfont icon-email" title="email"></a>
-        <a target="_blank" rel="noopener" href="https://github.com/nothing-lin" class="iconfont icon-github" title="github"></a>
-        <a href="/atom.xml" class="iconfont icon-rss" title="rss"></a>
-    </div><div class="copyright">
-  <span class="power-by">
-    由 <a class="hexo-link" target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> 强力驱动
-  </span>
-  <span class="division">|</span>
-  <span class="theme-info">
-    主题 - 
-    <a class="theme-link" target="_blank" rel="noopener" href="https://github.com/ahonn/hexo-theme-even">Even</a>
-  </span>
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                  
+                
+                
+  <div id="vcomments"></div>
+  <script type="text/javascript">
+    Fluid.utils.waitElementVisible('vcomments', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#vcomments",
+          app_id: "hfm5Ni684iVoS9xVlzOy7y1i-gzGzoHsz",
+          app_key: "wxu7XEemWYyyELd4xIa2uGXU",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
 
-  <span class="copyright-year">&copy;2020 - 2021<span class="heart">
-      <i class="iconfont icon-heart"></i>
-    </span>
-    <span class="author">NothingLin</span>
-  </span>
-</div>
-</footer>
 
-      <div class="back-to-top" id="back-to-top">
-        <i class="iconfont icon-up"></i>
+              </article>
+            
+          </article>
+        </div>
       </div>
     </div>
     
-<!-- valine Comments -->
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//cdn.jsdelivr.net/gh/xcss/valine@v1.1.7/dist/Valine.min.js"></script>
-<script type="text/javascript">
-    new Valine({
-        el: '#vcomments',
-        notify: false,
-        verify: false,
-        app_id: "hfm5Ni684iVoS9xVlzOy7y1i-gzGzoHsz",
-        app_key: "wxu7XEemWYyyELd4xIa2uGXU",
-        placeholder: "这里可以留言哦",
-        avatar: 'mm'
-    });
-</script>
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
 
-<script type="text/javascript" src="/lib/jquery/jquery.min.js"></script>
-  <script type="text/javascript" src="/lib/slideout/slideout.js"></script>
-  <script type="text/javascript" src="/js/src/even.js?v=2.11.0"></script>
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+<!-- SCRIPTS -->
+
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+    
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+
 </body>
 </html>
