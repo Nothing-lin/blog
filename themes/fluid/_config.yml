@@ -209,7 +209,7 @@ custom_html: ''
 # 网页访问统计
 # Analysis of website visitors
 web_analytics:  # 网页访问统计
-  enable: false
+  enable: true
 
   # 百度统计的 Key，值需要获取下方链接中 `hm.js?` 后边的字符串
   # Baidu analytics, get the string behind `hm.js?`
@@ -246,8 +246,8 @@ web_analytics:  # 网页访问统计
   # LeanCloud 计数统计，可用于 PV UV 展示，如果 `web_analytics: enable` 没有开启，PV UV 展示只会查询不会增加
   # LeanCloud count statistics, which can be used for PV UV display. If `web_analytics: enable` is false, PV UV display will only query and not increase
   leancloud:
-    app_id:
-    app_key:
+    app_id: hfm5Ni684iVoS9xVlzOy7y1i-gzGzoHsz
+    app_key: wxu7XEemWYyyELd4xIa2uGXU
     # REST API 服务器地址，国际版不填
     # Only the Chinese mainland users need to set
     server_url:
@@ -302,7 +302,7 @@ navbar:
     - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
     - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
-    #- { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
+    - { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
 
 # 搜索功能，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件
 # Search feature, based on hexo-generator-search. If you have installed other search plugins, please disable this feature to avoid generating redundant index files
@@ -491,7 +491,7 @@ post:
     # 作者，优先根据 front-matter 里 author 字段，其次是 hexo 配置中 author 值
     # Author, based on `author` field in front-matter, if not set, based on `author` value in hexo config
     author:
-      enable: false
+      enable: true
 
     # 文章日期，优先根据 front-matter 里 date 字段，其次是 md 文件日期
     # Post date, based on `date` field in front-matter, if not set, based on create date of .md file
@@ -522,7 +522,7 @@ post:
     # 浏览量计数
     # Number of visits
     views:
-      enable: false
+      enable: true
       # 统计数据来源
       # Data Source
       # Options: busuanzi | leancloud
@@ -808,14 +808,14 @@ about:
   banner_mask_alpha: 0.3
   subtitle:  # 打字机内容
   avatar: /img/avatar.png
-  name: "Fluid"
-  introduce: "An elegant theme for Hexo"
+  name: "Nothinglin"
+  introduce: "Stay hungry，Stay foolish！"
   # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，`class` 代表图标的 css class，添加 `qrcode` 后，图标不再是链接而是悬浮二维码
   # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, The icon is no longer a link, but a hovering QR code
   icons:
-    - { class: "iconfont icon-github-fill", link: "https://github.com", tip: "GitHub" }
-    - { class: "iconfont icon-douban-fill", link: "https://douban.com", tip: "豆瓣" }
-    - { class: "iconfont icon-wechat-fill", qrcode: "/img/favicon.png" }
+    - { class: "iconfont icon-github-fill", link: "https://github.com/Nothing-lin", tip: "GitHub" }
+    # - { class: "iconfont icon-douban-fill", link: "https://douban.com", tip: "豆瓣" }
+    # - { class: "iconfont icon-wechat-fill", qrcode: "/img/favicon.png" }
 
 
 #---------------------------
@@ -857,21 +857,21 @@ links:
   # Member item of page
   items:
     - {
-      title: "Fluid Blog",
-      intro: "主题博客",
-      link: "https://hexo.fluid-dev.com/",
+      title: "Nothinglin's blog",
+      intro: "我的英文博客",
+      link: "https://nothinglin.hashnode.dev/",
       avatar: "/img/favicon.png"
     }
     - {
-      title: "Fluid Docs",
-      intro: "主题使用指南",
-      link: "https://hexo.fluid-dev.com/docs/",
+      title: "Nothinglin's blog",
+      intro: "博客园站",
+      link: "https://www.cnblogs.com/nothing-lin/",
       avatar: "/img/favicon.png"
     }
     - {
-      title: "Fluid Repo",
-      intro: "主题 GitHub 仓库",
-      link: "https://github.com/fluid-dev/hexo-theme-fluid",
+      title: "NothingLin-s-knowledge-space",
+      intro: "我的知识仓库",
+      link: "https://cdn.apkook.com/-----https://github.com/Nothing-lin/NothingLin-s-knowledge-space",
       avatar: "/img/favicon.png"
     }
 

@@ -1,7 +1,6 @@
 ---
 title: 免费静态博客部署平台 -- render
 date: 2020-12-09 13:06:52
-index_img: /img/1.png
 tags:
 - Tools
 ---
