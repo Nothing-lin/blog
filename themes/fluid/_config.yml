@@ -304,6 +304,7 @@ navbar:
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
     - { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
     - { key: "网盘", link: 'https://nothinglin-space.my-free.workers.dev/0:/', icon: "iconfont icon-book" }
+    - { key: "Upload", link: 'https://nothinglin-space-upload.my-free.workers.dev/', icon: "iconfont icon-top" }
 	
 	
 
