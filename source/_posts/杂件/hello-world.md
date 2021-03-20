@@ -1,7 +1,7 @@
 ---
 title: Hello World
 date: 2016-06-01 23:47:44 #文章生成時間
-index_img: /img/default.jpg
+index_img: /img/default.png
 ---
 
 
