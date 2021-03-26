@@ -622,7 +622,7 @@ post:
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo
-    type: valine
+    type: livere
 
 
 #---------------------------
@@ -727,7 +727,7 @@ changyan:
 # Based on third-party service
 # See: https://www.livere.com
 livere:
-  uid: ''
+  uid: 'MTAyMC81MzA1OS8yOTUzNQ=='
 
 # Remark42
 # 需要自己运行后端服务
