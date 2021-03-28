@@ -1,6 +1,6 @@
 ---
 title: 【系统操作】解决C盘扩容问题
-index_img: /img/default.jpg
+index_img: https://i.loli.net/2021/03/28/t6IAPMrGoE7J3vD.png
 date: 2021-03-28 12:57:38
 tags: 系统操作
 categories: 系统操作
