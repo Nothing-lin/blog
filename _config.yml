@@ -104,13 +104,13 @@ theme: fluid
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/Nothing-lin/blog.git
+  repo: git@github.com:Nothing-lin/blog.git
   branch: master
   
   
   # 备份我的hexo博客
 backup:
     type: git
-    theme: even
+    theme: fluid
     repository:
-       github: https://github.com/Nothing-lin/blog.git,branchName
+       github: git@github.com:Nothing-lin/blog.git,branchName
