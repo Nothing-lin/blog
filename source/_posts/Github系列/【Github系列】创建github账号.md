@@ -2,8 +2,8 @@
 title: 【Github系列】创建github账号
 index_img: /img/default.jpg
 date: 2021-03-28 13:07:00
-tags:
-categories:
+tags: Github系列
+categories: Github系列
 ---
 
 # ![](https://NothingLin.coding.net/p/picture/d/picture/git/raw/master/2020/12/29/20201229203912.png)【Github系列】创建github账号
