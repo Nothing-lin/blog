@@ -1,6 +1,6 @@
 ---
 title: 【Github系列】创建github账号
-index_img: https://i.loli.net/2021/03/28/GcN39Cd4lyZuKwU.png
+index_img: https://i.loli.net/2021/03/28/sfyb24Zdp6RUknC.png
 date: 2021-03-28 13:07:00
 tags: Github系列
 categories: Github系列
