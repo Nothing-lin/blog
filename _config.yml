@@ -113,4 +113,4 @@ backup:
     type: git
     theme: fluid
     repository:
-       github: https://github.com/Nothing-lin/blog.git,branchName
+       github: git@github.com:Nothing-lin/blog.git,branchName
