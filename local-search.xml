@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>【系统操作】解决C盘扩容问题</title>
+    <link href="/2021/03/28/%E6%9D%82%E4%BB%B6/%E3%80%90%E7%B3%BB%E7%BB%9F%E6%93%8D%E4%BD%9C%E3%80%91%E8%A7%A3%E5%86%B3C%E7%9B%98%E6%89%A9%E5%AE%B9%E9%97%AE%E9%A2%98/"/>
+    <url>/2021/03/28/%E6%9D%82%E4%BB%B6/%E3%80%90%E7%B3%BB%E7%BB%9F%E6%93%8D%E4%BD%9C%E3%80%91%E8%A7%A3%E5%86%B3C%E7%9B%98%E6%89%A9%E5%AE%B9%E9%97%AE%E9%A2%98/</url>
+    
+    <content type="html"><![CDATA[<h1 id="【系统操作】解决C盘扩容问题"><a href="#【系统操作】解决C盘扩容问题" class="headerlink" title="【系统操作】解决C盘扩容问题"></a><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/12/29/20201229203912.png">【系统操作】解决C盘扩容问题</h1><h3 id="强迫症患者的煎熬："><a href="#强迫症患者的煎熬：" class="headerlink" title="强迫症患者的煎熬："></a>强迫症患者的煎熬：</h3><p>对于我来说，C盘的剩余空间容量的大小会决定我对新软件安装的态度。C盘空间太小的话 - - 我是不会再去下载新的软件的，除非我有多余的软件可以给我来卸载。根据我的观察，不管我有没有安装新的软件，C盘的空间总是一直在减少，我不知为什么会越来越抓狂。上网搜索了解了之后发现，系统会定期更新系统，系统更新文件就会偷偷存放在C盘中，所以不借助一些垃圾清理工具都找不到这些文件。还有软件和浏览器的使用缓存也是导致C盘空间容量减少的主要原因。其实这还好吧，我基本上每天的定期清理垃圾的，只不过每一次新学期就又要多学几门编程语言，很奇怪有些开发工具要下载很多乱七八糟的配件之类的，而且还多而大，最后慢慢消耗掉我仅存的C盘空间。</p><h3 id="如何解决C盘扩容问题？"><a href="#如何解决C盘扩容问题？" class="headerlink" title="如何解决C盘扩容问题？"></a>如何解决C盘扩容问题？</h3><p>后来忍不下去之后就开始在网上收集有用的C盘扩容方法，最后成功的我将在下面进行介绍。不过前提条件是：装载你的C盘的硬盘容量要足够大。</p><p><img src="https://z3.ax1x.com/2021/03/28/cSdaHe.png"></p><p><img src="https://z3.ax1x.com/2021/03/28/cSdwAH.png"></p><blockquote><p>注意：C盘空间和D盘空间是要在同一个硬盘中才行。</p></blockquote><p><img src="https://z3.ax1x.com/2021/03/28/cSd0Nd.png"></p><h3 id="如何查看我的C盘慢不慢足扩容要求？"><a href="#如何查看我的C盘慢不慢足扩容要求？" class="headerlink" title="如何查看我的C盘慢不慢足扩容要求？"></a>如何查看我的C盘慢不慢足扩容要求？</h3><p>首先我们需要右击我的电脑，选择管理选项</p><p><img src="https://z3.ax1x.com/2021/03/28/cSdB4A.png"></p><p>因为我的C盘和D盘同属于同一个硬盘（磁盘0），所以我的策略是在D盘中分一些空间给C盘，从而达到C盘扩容的目的。</p><blockquote><p>注意：磁盘1中的空间是不能够分配到C盘进行扩容的，因为他们并不是在同一块硬盘中，物理不相通，逻辑关系更没有关系。</p></blockquote><h3 id="软件工具"><a href="#软件工具" class="headerlink" title="软件工具"></a>软件工具</h3><p>软件工具的话，我选择的是<strong>DiskGenius</strong>来进行分区大小的调整。我们首先选择D盘右键，再点击调整分区大小，我们从D盘空闲出20G的空间先。</p><p><img src="https://z3.ax1x.com/2021/03/28/cSdr9I.png"></p><p><img src="https://z3.ax1x.com/2021/03/28/cSds3t.png"></p><p>然后点击开始，等待几分钟。可能你重启之后会进入一个磁盘调试系统中，你可以选择推出或者是在该系统里面打开DiskGenius软件，点击你分配出来的灰色部分的空间，右键选择空间分配给C盘，然后再耐心等待一下并且等待完成之后重新启动电脑就完成了C盘的扩容。</p><p>PS：因为进入调试系统中没办法截屏，所以当时的图片没有备份下来，所有后面分配空间给C盘的部分图片没办法提供出来。不过我参考网上的截图，给大家提供参考，分配空闲空间的截图如下，完成下面部分重启电脑之后就完成了C盘扩容了。</p><p><img src="https://z3.ax1x.com/2021/03/28/cSdygP.png"></p><p>总体来说，实现C盘扩容需要你的空闲空间和你的C盘是同属于一个硬盘下才能进行空间的逻辑调整。大家注意理解一下就好了，因为我的基本功也不是很扎实，所以在这里献丑了。</p><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/12/31/20201231121340.png"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>系统操作</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>系统操作</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World</title>
     <link href="/2016/06/01/%E6%9D%82%E4%BB%B6/hello-world/"/>
     <url>/2016/06/01/%E6%9D%82%E4%BB%B6/hello-world/</url>
