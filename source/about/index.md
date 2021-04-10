@@ -11,3 +11,6 @@ layout: about
 
 - [30天搞定Java核心技术 零基础入门（尚硅谷）](https://www.youtube.com/watch?v=t4upsF0Pd8o&list=PLmOn9nNkQxJH0qBIrtV6otI0Ep4o2q67A)
 
+- （待）netty
+- （待）springboot
+- （待）git、GitHub、gitlab
