@@ -6,7 +6,7 @@
   <link href="https://nothinglin.top/atom.xml" rel="self"/>
   
   <link href="https://nothinglin.top/"/>
-  <updated>2021-04-10T16:56:51.857Z</updated>
+  <updated>2021-04-12T10:46:37.739Z</updated>
   <id>https://nothinglin.top/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【第03天】30天Java核心编程技术基础</title>
+    <link href="https://nothinglin.top/2021/04/12/java%E6%A0%B8%E5%BF%83%E5%9F%BA%E7%A1%80%E6%8A%80%E6%9C%AF/%E3%80%90%E7%AC%AC03%E5%A4%A9%E3%80%9130%E5%A4%A9Java%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80/"/>
+    <id>https://nothinglin.top/2021/04/12/java%E6%A0%B8%E5%BF%83%E5%9F%BA%E7%A1%80%E6%8A%80%E6%9C%AF/%E3%80%90%E7%AC%AC03%E5%A4%A9%E3%80%9130%E5%A4%A9Java%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80/</id>
+    <published>2021-04-12T05:19:23.000Z</published>
+    <updated>2021-04-12T10:46:37.739Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="【第03天】30天Java核心编程技术基础"><a href="#【第03天】30天Java核心编程技术基础" class="headerlink" title="【第03天】30天Java核心编程技术基础"></a><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/12/29/20201229203912.png">【第03天】30天Java核心编程技术基础</h1><h3 id="有话想说"><a href="#有话想说" class="headerlink" title="有话想说"></a>有话想说</h3><p>今天是系统性学习Java的第三天，说实在的 – 经过两天之后可能意志就开始出现变化了。现在开始怀疑我这样看视频学习，看完视频之后还要完全整理视频中的笔记，这种做法真的好吗？所以我就又开始胡思乱想了，我还花那么多时间来手敲这些笔记的内有意义吗？视频老师都已经整理好了全部课堂笔记在Onedrive上面，我直接下载之后就能获取全部的课堂笔记了，与其看视频效率那么慢，讲的都知识课件已经给出的PPT内容，我直接看PPT不就行了吗？我还有必要这么慢地去看视频，这样慢慢学习吗？</p><p>这大概就是我第三天地心路历程，一直不断怀疑、怀疑、怀疑。就只是搞速成法和大跃进，但是我自己也冷静了下来，总结了自己以前的学习经历。每次坚持系统性学习都是在这个时候把自己说服，开始放弃继续这样的低效学习，所以大学开始一年多差不多两年了，我自己什么都没学成，更别说系统性知识框架了。</p><p>我这个时候开始胡思乱想正好说明我自己已经进入了学习的疲劳期，人在极度疲惫的时候本能上是想要偷懒的，但是你的大脑总得给你找个理由来偷懒吧？所以让你产生怀疑就是我们大脑的一种偷懒方式，它就是让你对坚持下来这种信念进行动摇，一旦真的动摇你之后，它就可以休息了，就不用这么辛苦了。所以，我在昨天感觉到自己开始胡思乱想，并且想要放弃的时候，我果断决定暂时休息。先停止学习，不进行假学习，或者赶任务式地表面学习。</p><blockquote><p>赶任务式地表面学习是指，我今天有20多个视频要观看，但是我又没有足够的耐心和精力去看，于是我就进入一种假学习地状态，边看边玩手机。这样下来好像今天地视频全部都看完了，实际上自己地大脑没有一点收获。</p></blockquote><p>不过，确实有一部分视频讲解地内容不是特别重要的话，而且课件里都有地话，自己也能很容易理解的内容我的建议还是直接浏览课件即可。</p><p>其实，我自己也确实进行了一些反思和思考。</p><p>我觉得我确实可以先对课件进行预习，如果发现对应的内容相对比较容易理解的话，我就可以直接进行笔记整理了，当我遇到比较困难的内容的时候再结合视频进行学习，这样可以节省我更多时间，从而效率也能进行提升，我觉得这一个反思我可以进行考虑接纳。还有一个问题我必须说明一下：</p><blockquote><p>课件都已经有内容了，我还有必要手敲这些知识内容到博客中吗？</p></blockquote><p>我的答案在昨天还是很犹豫，今天我需要明确一下：非常有必要。</p><p>重新手敲笔记是我的一个学习过程，当然并不是说很生硬的全部都一字不差地抄上去。其实对于一些好理解的知识点是可以复制过来的，对于一些比较难的内容在手敲的过程中我们还会去理解和思考。</p><p>还有我想要声明一下，我即使完成了这个知识体系并不意味着我对这些知识已经滚瓜烂熟了，我只是想通过博客的形式来记录我曾经学过什么内容，对于部分内容是如何进行思考的。我的fuid博客主题一个优点就是它的分类页和博客的搜索功能提完善的，如果今后我对一些知识不懂的时候，我可以通过我的博客搜索功能查询一下我自己是否曾经学过这个知识，如果没有就进行知识系统的补充，如果有的话就重新学习，补充自己新的理解。</p><p>所以综上所述，我写博客的目的是想架构一个个人知识系统。但是我想补充一点的就是，我在CSDN和知乎等平台上发布的博文目的就是为了引流的了，毕竟我自己就想尝试通过这种写作方式来成为自己的一个副业发展。当然前期不知道自己会不会对别人的文章进行抄袭，我当然不希望自己这样做，我更希望是带着自己的理解和思考进行对别人的主题进行补充，算是效仿之类吧。但是没实力之前我并不能保证自己不会拿别人的主题做文章。</p><h3 id="第03天-–-知识目录"><a href="#第03天-–-知识目录" class="headerlink" title="第03天 – 知识目录"></a>第03天 – 知识目录</h3><ul><li>关键字和保留字</li><li>标识符</li><li>变量<ul><li>基本数据类型</li><li>基本数据类型变量间转换</li><li>基本数据类型与String之间的转换</li><li>进制与进制之间的转换</li></ul></li><li>运算符</li><li>程序流程控制</li></ul><h3 id="关键字和保留字"><a href="#关键字和保留字" class="headerlink" title="关键字和保留字"></a>关键字和保留字</h3><p><strong>keyword关键字的定义和特点</strong></p><p>关键字是指被Java语言赋予了特殊含义，被用作专门用途的字符串（或单词）。</p><blockquote><p>关键字的特点就是关键字的所有字母都是小写，比如class、public</p></blockquote><p><img src="D:\工作区\typora截图\image-20210412174532837.png" alt="image-20210412174532837"></p><p><img src="D:\工作区\typora截图\image-20210412174609679.png" alt="image-20210412174609679"></p><h3 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h3><p>Java对各种变量、方法和类等要素进行命名时使用的字符序列被称为标识符。通俗点讲就是，凡是自己可以起名字的地方都叫做标识符。我们自定义的名称，标识为我们自定义的符号。</p><p><strong>标识符的合法定义规则：</strong></p><ul><li>标识符由26个英文字母大小写，0-9，_或$组成（严格区分大小写）</li><li>标识符的开头不能够使用数字进行开头</li><li>标识符不能够使用关键字和保留字进行定义（比如类名位置）</li><li>标识符在Java中严格区分大小写且标识符的定义长度时无限制的</li><li>标识符中不能包含空格</li></ul><p><strong>Java中的名称命名规范：</strong></p><ul><li>包名：多组单词组成时，所有字母都是小写：xxyyzz</li><li>类名、接口名：多单词组成时，所有单词的首字母大写：XxYyZz</li><li>变量名、方法名：多单词组成时，第一个单词首字母小写，第二个单词开始每个单词首字母大写：xxxYyyZzz</li><li>常量名：所有字母都大写。多单词时每个单词用下划线进行连接：XXX_YYY_ZZZ</li></ul><blockquote><p>注意：在起名字的时候，为了提高阅读性，起的名字要尽可能一眼就能看出是干什么的。还有就是Java是采用unicode字符集的，所有标识符是可以使用汉字进行声明的，但是一般都不建议这样子使用。</p></blockquote><h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p><strong>变量的概念</strong></p><p>变量是内存中的一个存储区域，这个区域中的数据可以在同一个类型范围内不断变化。变量是程序中最基本的存储单元。变量的作用就是用在内存中来对数据进行保存的一个存储空间。</p><p><strong>使用变量需要注意的点</strong></p><ul><li>Java中每个变量都必须先声明再使用</li><li>使用变量名来访问对应区域的数据</li><li>变量的作用域是在其被定义范围所在的{ }花括号内的</li><li>在同一个作用域中不能够进行变量的重名定义</li></ul><p><strong>变量的声明</strong></p><ul><li>语法：&lt;数据类型&gt;&lt;变量名&gt;   <code>int num</code></li></ul><p><strong>变量的声明赋值</strong></p><ul><li>语法：&lt;数据类型&gt;&lt;变量名&gt;=&lt;初始化值&gt;   <code>int num = 10</code></li></ul><p><strong>变量的分类</strong></p><p><img src="D:\工作区\typora截图\image-20210412180806017.png" alt="image-20210412180806017"></p><p>变量的分类还有分为成员变量和局部变量这两种：</p><ul><li>成员变量是在方法体外，类体内进行声明的变量</li><li>局部变量是在方法体内部声明的变量</li></ul><p><img src="D:\工作区\typora截图\image-20210412181439976.png" alt="image-20210412181439976"></p><p><img src="D:\工作区\typora截图\image-20210412181526048.png" alt="image-20210412181526048"></p><p><strong>整数类型</strong></p><p>变量的整数类型分别有以下几种：byte、short、int、long。</p><p>在Java的整型常量中默认的类型为int类型，在声明long型常量后面必须加入“l”或”L”，否则会被识别为默认类型int。一般情况下声明变量都是使用int进行声明的，除非是定义超出int承受范围内的数字才使用long类型进行定义。</p><p><img src="D:\工作区\typora截图\image-20210412182100072.png" alt="image-20210412182100072"></p><blockquote><p>bit是计算机中最小的存储单位，byte是计算机中基本的存储单位。</p></blockquote><p><strong>浮点类型</strong></p><p>常用的浮点类型有float、double。</p><p>float单精度，尾数可以精确到7位有效数字。很多情况下，精度很难满足需求，这时候就需要使用双精度double了，double的精度是float的两倍。</p><p><img src="D:\工作区\typora截图\image-20210412182603514.png" alt="image-20210412182603514"></p><p><strong>字符类型</strong></p><p>字符类型有char，char用来表示一个字母或一个中文，char常量是使用单引号<code>&#39; &#39;</code>进行表示的，并且char类型的变量是可以进行与数字进行运算的，因为每一个char字符都有对应一个Unicode码与之相对应。</p><p><img src="D:\工作区\typora截图\image-20210412183010910.png" alt="image-20210412183010910"></p><p><strong>常用转义字符</strong></p><p><img src="D:\工作区\typora截图\image-20210412183144031.png" alt="image-20210412183144031"></p><p><strong>布尔类型</strong></p><p>布尔类型有Boolean，一般是用来进行逻辑条件的判断使用的：</p><ul><li>if条件控制语句</li><li>while循环控制语句</li><li>do-while循环控制语句</li><li>for循环控制语句</li></ul><p>布尔类型数据只允许取值true或false，没有null。</p><blockquote><p>在Java中不可以使用0或者非0的整数来代替false和true使用，这一点和C语言是不同的，Java虚拟机中没有任何供Boolean值专用的字节码指令，但Boolean在编译之后都是用Java虚拟机中的int数据类型来代替，true用1表示，false用0表示。</p></blockquote><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2020/12/31/20201231121340.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;【第03天】30天Java核心编程技术基础&quot;&gt;&lt;a href=&quot;#【第03天】30天Java核心编程技术基础&quot; class=&quot;headerlink&quot; title=&quot;【第03天】30天Java核心编程技术基础&quot;&gt;&lt;/a&gt;&lt;img src=&quot;https://nothi</summary>
+      
+    
+    
+    
+    <category term="30天Java核心编程技术基础" scheme="https://nothinglin.top/categories/30%E5%A4%A9Java%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="Java" scheme="https://nothinglin.top/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>【第02天】30天Java核心编程技术基础</title>
