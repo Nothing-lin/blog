@@ -29,3 +29,8 @@ code{
   border-bottom-width: 3px;
   text-align: center;
 }
+
+/* 修改代码块 */
+pre[class*=language-] {
+    margin: 1em 0 !important;
+}
