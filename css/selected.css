@@ -303,7 +303,7 @@ abbr::-webkit-selection {
 ::-webkit-scrollbar {
     /*改变纵向滚动条宽度*/
     width: 10px;
-    height: 5px;
+    height: 1px;
 }
 
 ::-webkit-scrollbar-track {
@@ -355,10 +355,4 @@ input::-moz-selection {
 
 input::-webkit-selection {
     background: #D5E5F1;
-}
-
-
-/* 设置p文字段对齐 */
-.page-content, .post-content{
-  text-align:justify !important;
 }
