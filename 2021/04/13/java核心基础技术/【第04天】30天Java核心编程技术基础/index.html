@@ -321,11 +321,15 @@
 <p>创建数组对象会在内存中开辟一整块连续的空间，而数组名引用的是这块连续空间的首地址。</p>
 <p>数组的长度一旦确定下来的话就不能对其进行修改了。</p>
 <p>我们可以直接通过下标或索引的方式来调用指定位置上的元素。</p>
+<br>
+
 <p><strong>数组的分类：</strong></p>
 <ul>
 <li>按照难度：一维数组、二维数组、三维数组·····</li>
 <li>按照类型：基本数据类型元素的数组，引用数据类型元素的数组（对象数组）</li>
 </ul>
+<br>
+
 <p><strong>一维数组的使用（声明）：</strong></p>
 <p>一维数组的声明方式： <code>type var[ ];</code> 或 <code>type[ ] var;</code></p>
 <div class="code-wrapper"><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">int</span> a<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
@@ -353,6 +357,8 @@
 <p>数组元素的下标是可以整型或者整理表达式进行表达的。<code>a[3]</code>、<code>b[i]</code>、<code>c[6*i]</code>。</p>
 <p>数组元素下标是从0开始的，数组的长度为n，那么数组的合法下标的取值范围是[0,n-1]。例如：<code>int[3]</code>;的可引用数组元素为<code>a[0]</code>、<code>a[1]</code>、<code>a[2]</code>。</p>
 <p>每一个数组都有一个属性length来指明它的长度，例如：a.length指明数组a[ ]的长度，也就是素组中元素的个数。</p>
+<br>
+
 <p><strong>数组元素的默认初始化值</strong></p>
 <p>数组是引用类型，数组的元素相当于类的成员变量，因此数组一经分配空间，其中的每个元素也被按照成员变量同样的方式被隐式初始化。</p>
 <div class="code-wrapper"><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Test</span><span class="token punctuation">&#123;</span>
@@ -368,6 +374,8 @@
 <li>对于引用数据类型而言，默认初始化值为null</li>
 </ul>
 <p><img src="https://z3.ax1x.com/2021/04/15/cgZDzt.png" srcset="/img/loading.gif"></p>
+<br>
+
 <p><strong>创建基本数据类型数组</strong></p>
 <p>Java中使用关键字new来创建数组，如下：</p>
 <div class="code-wrapper"><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Test</span><span class="token punctuation">&#123;</span>
@@ -390,6 +398,8 @@
 <p>动态初始化：<code>int[ ][ ] arr = new int[3][2];</code></p>
 <p>上面的式子中定义了一个名称为arr的二维数组，这个二维数组中有3个一维数组，每一个一维数组中有2个元素。这里的一维数组名称分别为arr[0]，arr[1]，arr[2]，如果要给第一个一维数组为1的脚标赋值为78的写法是：<code>arr[0][1]</code>。</p>
 <p><img src="https://z3.ax1x.com/2021/04/15/cgZk2q.png" srcset="/img/loading.gif"></p>
+<br>
+
 <p><strong>二维数组的动态定义</strong></p>
 <p><img src="https://z3.ax1x.com/2021/04/15/cgZ6L8.png" srcset="/img/loading.gif"></p>
 <p><strong>注意：</strong></p>
@@ -403,6 +413,8 @@ arr<span class="token punctuation">[</span><span class="token number">2</span><s
 
 <p>像这种没有初始化二维数组的一维数组的个数，默认情况下是null也就是默认情况下没有初始化二维数组中的一维数组的话，上面定义某个一维数组的容纳个数为3，那么试问这个3是给第几个一维数组进行定义的？</p>
 <p>这就导致了歧义，所以我们需要注意上面这种错误的二维数组定义。</p>
+<br>
+
 <p><strong>二维数组的静态定义</strong></p>
 <div class="code-wrapper"><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> arr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span class="token punctuation">&#123;</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span class="token punctuation">&#123;</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
 
@@ -413,16 +425,22 @@ arr<span class="token punctuation">[</span><span class="token number">2</span><s
 <li>第三个一维数组arr[2] = {9,0,1,6};</li>
 <li>第三个一维数组的长度表示方式：arr[2].length;</li>
 </ul>
+<br>
+
 <p><strong>二维数组的特殊写法</strong></p>
 <div class="code-wrapper"><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span>x<span class="token punctuation">,</span>y<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
 
 <p>在这里，x是一维数组，y是二维数组。</p>
+<br>
+
 <h3 id="数组中常涉及到的算法"><a href="#数组中常涉及到的算法" class="headerlink" title="数组中常涉及到的算法"></a>数组中常涉及到的算法</h3><ul>
 <li>数组元素的赋值（杨辉三角、回形数等）</li>
 <li>求数值型数组中元素的最大值、最小值、平均数、总和等</li>
 <li>数组的复制、反转、查找（线性查找、二分法查找）</li>
 <li>数组元素的排序算法</li>
 </ul>
+<br>
+
 <p><strong>排序算法</strong></p>
 <p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/4/15/20210415014846.gif" srcset="/img/loading.gif" alt="冒泡排序"></p>
 <p>排序是指假设含有n个记录的序列为{R1，R2，···，Rn}，对应关键字序列为{K1，K2，···，Kn}。将这些记录重新排列为{Ri1，Ri2，···，Rin}，使得相应的关键字（下标索引）满足Ki1 &lt;= Ki2 &lt;= … &lt;= Kin。这样的操作就叫排序。</p>
@@ -430,6 +448,8 @@ arr<span class="token punctuation">[</span><span class="token number">2</span><s
 <blockquote>
 <p>通常来说，排序的目的是为了能够快速查找</p>
 </blockquote>
+<br>
+
 <p><strong>衡量排序算法的优劣</strong></p>
 <ul>
 <li>时间复杂度，分析关键字的比较次数和总移动次数</li>
@@ -442,6 +462,8 @@ arr<span class="token punctuation">[</span><span class="token number">2</span><s
 <li>稳定性，如果两个记录A和B的关键字的值相等，但是排序后A、B的先后次序保持不变，那么就称这种排序算法是稳定的。</li>
 </ul>
 <p><img src="https://z3.ax1x.com/2021/04/15/cgZ4Wn.png" srcset="/img/loading.gif"></p>
+<br>
+
 <p><strong>排序算法的分类</strong></p>
 <ul>
 <li>内部排序</li>
@@ -451,6 +473,8 @@ arr<span class="token punctuation">[</span><span class="token number">2</span><s
 <li>外部排序</li>
 </ul>
 <p>外部排序参与排序的数据非常多，数据量非常大，计算机无法把整个排序过程放在内存中完成，必须借助于外部存储器（如磁盘）。外部排序最常见的是多路归并排序，可以认为外部排序是由多次内部排序组成的。</p>
+<br>
+
 <p><strong>十大内部排序算法</strong></p>
 <ul>
 <li>选择排序</li>
@@ -475,20 +499,36 @@ arr<span class="token punctuation">[</span><span class="token number">2</span><s
 <li>桶式排序</li>
 <li>基数排序</li>
 </ul>
+<br>
+
 <p><strong>选择排序：</strong></p>
 <p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/4/15/20210415014929.gif" srcset="/img/loading.gif"></p>
+<br>
+
 <p><strong>堆排序：</strong></p>
 <p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/4/15/20210415014935.gif" srcset="/img/loading.gif" alt="堆排序"></p>
+<br>
+
 <p><strong>冒泡排序：</strong></p>
 <p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/4/15/20210415014941.gif" srcset="/img/loading.gif" alt="冒泡排序"></p>
+<br>
+
 <p><strong>快速排序：</strong></p>
 <p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/4/15/20210415014947.gif" srcset="/img/loading.gif" alt="快速排序"></p>
+<br>
+
 <p><strong>直接插入排序：</strong></p>
 <p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/4/15/20210415014954.gif" srcset="/img/loading.gif"></p>
+<br>
+
 <p><strong>归并排序：</strong></p>
 <p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/4/15/20210415015001.gif" srcset="/img/loading.gif" alt="归并排序"></p>
+<br>
+
 <p><strong>基数排序：</strong></p>
 <p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/4/15/20210415015011.gif" srcset="/img/loading.gif" alt="基数排序"></p>
+<br>
+
 <p><strong>算法的5大特征</strong></p>
 <ul>
 <li>输入input</li>
@@ -522,7 +562,7 @@ arr<span class="token punctuation">[</span><span class="token number">2</span><s
 </blockquote>
 <h3 id="Arrays工具类的使用"><a href="#Arrays工具类的使用" class="headerlink" title="Arrays工具类的使用"></a>Arrays工具类的使用</h3><p><code>java.util.Arrays</code>类也就是操作数组的工具类，包含了用来操作数组（排序、搜索）的各种方法。</p>
 <ul>
-<li><code>boolean equals（int[a]，int[]b）</code></li>
+<li><code>boolean equals（int[a],int[]b）</code></li>
 </ul>
 <blockquote>
 <p>判断两个数组是否相等</p>
@@ -546,13 +586,17 @@ arr<span class="token punctuation">[</span><span class="token number">2</span><s
 <p>对数组进行排序</p>
 </blockquote>
 <ul>
-<li><code>int binarySearch(int[] a，int key)</code></li>
+<li><code>int binarySearch(int[] a,int key)</code></li>
 </ul>
 <blockquote>
 <p>对排序后的数组进行二分法检索指定的值</p>
 </blockquote>
+<br>
+
 <p><strong>演示sort（）方法的使用</strong></p>
 <p><img src="https://z3.ax1x.com/2021/04/15/cgZ7LT.png" srcset="/img/loading.gif"></p>
+<br>
+
 <h3 id="数组使用中的常见异常"><a href="#数组使用中的常见异常" class="headerlink" title="数组使用中的常见异常"></a>数组使用中的常见异常</h3><p><img src="https://z3.ax1x.com/2021/04/15/cgZbeU.png" srcset="/img/loading.gif"></p>
 <h3 id="最后有话说"><a href="#最后有话说" class="headerlink" title="最后有话说"></a>最后有话说</h3><p>这一章数组中包含了许多算法方面的内容，但是这一章主要目的是学习数组相关的知识内容，所以大量算法题留到后面专门学习算法和数据结构的时候进行研究和学习。</p>
 <h3 id="推荐阅读"><a href="#推荐阅读" class="headerlink" title="推荐阅读"></a>推荐阅读</h3><details>
