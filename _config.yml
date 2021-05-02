@@ -45,16 +45,16 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
-  line_number: true
+  enable: false
+  line_number: false
   auto_detect: false
   tab_replace: ''
-  wrap: true
+  wrap: false
   hljs: false
 prismjs:
   enable: false
-  preprocess: true
-  line_number: true
+  preprocess: false
+  line_number: false
   tab_replace: ''
 
 # Home page setting
@@ -98,7 +98,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: fluid
+theme: coolshell
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -111,6 +111,30 @@ deploy:
   # 备份我的hexo博客
 backup:
     type: git
-    theme: fluid
+    theme: coolshell
     repository:
        github: git@github.com:Nothing-lin/blog.git,branchName
+
+# hexo-neat
+# md博文压缩
+neat_enable: true
+# 压缩html（ejs，swig等也属于html格式片段）
+neat_html:
+  enable: true
+  exclude:
+# 压缩css
+neat_css:
+  enable: true
+  exclude:
+    - '*.min.css'
+    - '**/*.min.css'
+
+# 压缩js
+neat_js:
+  enable: true
+  mangle: true #打印日志
+  output:
+  compress:
+  exclude: #排除文件
+    - '*.min.js'
+    - '**/*.min.js'
