@@ -3,11 +3,11 @@
   <title>Nothinglin的个人博客</title>
   
   <subtitle>NothingLin</subtitle>
-  <link href="https://nothinglin.top/atom.xml" rel="self"/>
+  <link href="https://nothinglin.ml/atom.xml" rel="self"/>
   
-  <link href="https://nothinglin.top/"/>
+  <link href="https://nothinglin.ml/"/>
   <updated>2021-05-15T14:22:51.095Z</updated>
-  <id>https://nothinglin.top/</id>
+  <id>https://nothinglin.ml/</id>
   
   <author>
     <name>NothingLin</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>记录从Java入门到独立开发第一个项目的过程</title>
-    <link href="https://nothinglin.top/2021/05/15/Java/%E8%AE%B0%E5%BD%95%E4%BB%8EJava%E5%85%A5%E9%97%A8%E5%88%B0%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE%E7%9A%84%E8%BF%87%E7%A8%8B/"/>
-    <id>https://nothinglin.top/2021/05/15/Java/%E8%AE%B0%E5%BD%95%E4%BB%8EJava%E5%85%A5%E9%97%A8%E5%88%B0%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE%E7%9A%84%E8%BF%87%E7%A8%8B/</id>
+    <link href="https://nothinglin.ml/2021/05/15/Java/%E8%AE%B0%E5%BD%95%E4%BB%8EJava%E5%85%A5%E9%97%A8%E5%88%B0%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE%E7%9A%84%E8%BF%87%E7%A8%8B/"/>
+    <id>https://nothinglin.ml/2021/05/15/Java/%E8%AE%B0%E5%BD%95%E4%BB%8EJava%E5%85%A5%E9%97%A8%E5%88%B0%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE%E7%9A%84%E8%BF%87%E7%A8%8B/</id>
     <published>2021-05-15T07:34:52.000Z</published>
     <updated>2021-05-15T14:22:51.095Z</updated>
     
@@ -33,17 +33,17 @@
     
     
     
-    <category term="Java" scheme="https://nothinglin.top/categories/Java/"/>
+    <category term="Java" scheme="https://nothinglin.ml/categories/Java/"/>
     
     
-    <category term="Java" scheme="https://nothinglin.top/tags/Java/"/>
+    <category term="Java" scheme="https://nothinglin.ml/tags/Java/"/>
     
   </entry>
   
   <entry>
     <title>记录从Javascript零基础到独立开发第一个chrome插件的过程</title>
-    <link href="https://nothinglin.top/2021/05/09/JavaScript/JavaScript%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/"/>
-    <id>https://nothinglin.top/2021/05/09/JavaScript/JavaScript%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/</id>
+    <link href="https://nothinglin.ml/2021/05/09/JavaScript/JavaScript%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/"/>
+    <id>https://nothinglin.ml/2021/05/09/JavaScript/JavaScript%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/</id>
     <published>2021-05-09T10:05:47.000Z</published>
     <updated>2021-05-15T07:37:09.583Z</updated>
     
@@ -57,17 +57,17 @@
     
     
     
-    <category term="JavasScript笔记" scheme="https://nothinglin.top/categories/JavasScript%E7%AC%94%E8%AE%B0/"/>
+    <category term="JavasScript笔记" scheme="https://nothinglin.ml/categories/JavasScript%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="JavasScript" scheme="https://nothinglin.top/tags/JavasScript/"/>
+    <category term="JavasScript" scheme="https://nothinglin.ml/tags/JavasScript/"/>
     
   </entry>
   
   <entry>
     <title>Hexo主题coolshell使用说明</title>
-    <link href="https://nothinglin.top/2021/05/02/Hexo/Hexo%E4%B8%BB%E9%A2%98coolshell%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/"/>
-    <id>https://nothinglin.top/2021/05/02/Hexo/Hexo%E4%B8%BB%E9%A2%98coolshell%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</id>
+    <link href="https://nothinglin.ml/2021/05/02/Hexo/Hexo%E4%B8%BB%E9%A2%98coolshell%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/"/>
+    <id>https://nothinglin.ml/2021/05/02/Hexo/Hexo%E4%B8%BB%E9%A2%98coolshell%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</id>
     <published>2021-05-02T14:22:00.000Z</published>
     <updated>2021-05-02T15:44:03.451Z</updated>
     
@@ -81,17 +81,17 @@
     
     
     
-    <category term="CoolShell主题说明" scheme="https://nothinglin.top/categories/CoolShell%E4%B8%BB%E9%A2%98%E8%AF%B4%E6%98%8E/"/>
+    <category term="CoolShell主题说明" scheme="https://nothinglin.ml/categories/CoolShell%E4%B8%BB%E9%A2%98%E8%AF%B4%E6%98%8E/"/>
     
     
-    <category term="Hexo" scheme="https://nothinglin.top/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://nothinglin.ml/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="https://nothinglin.top/2016/06/01/hello-world/"/>
-    <id>https://nothinglin.top/2016/06/01/hello-world/</id>
+    <link href="https://nothinglin.ml/2016/06/01/hello-world/"/>
+    <id>https://nothinglin.ml/2016/06/01/hello-world/</id>
     <published>2016-06-01T15:47:44.000Z</published>
     <updated>2021-04-15T03:34:57.287Z</updated>
     
