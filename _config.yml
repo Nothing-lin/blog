@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://nothinglin.top/
+url: https://nothinglin.ml/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -138,3 +138,10 @@ neat_js:
   exclude: #排除文件
     - '*.min.js'
     - '**/*.min.js'
+
+
+sitemap:
+  path: sitemap.xml
+
+baidusitemap:
+  path: baidusitemap.xml
