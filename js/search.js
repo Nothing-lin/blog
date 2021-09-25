@@ -18,15 +18,14 @@
 // 02110-1301 USA
 //
 
-var searchFunc = function(path, search_id, content_id) {
+var searchFunc = function (path, search_id, content_id) {
   'use strict';
-  var BTN = "<i id='local-search-close'>x</i>";
   $.ajax({
     url: path,
     dataType: "xml",
-    success: function(xmlResponse) {
+    success: function (xmlResponse) {
       // get the contents from search data
-      var datas = $("entry", xmlResponse).map(function() {
+      var datas = $("entry", xmlResponse).map(function () {
         return {
           title: $("title", this).text(),
           content: $("content", this).text(),
@@ -37,7 +36,7 @@ var searchFunc = function(path, search_id, content_id) {
       var $input = document.getElementById(search_id);
       var $resultContent = document.getElementById(content_id);
 
-      $input.addEventListener('input', function() {
+      $input.addEventListener('input', function () {
         var str = '<ul class=\"search-result-list\">';
         var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
         $resultContent.innerHTML = "";
@@ -45,7 +44,7 @@ var searchFunc = function(path, search_id, content_id) {
           return;
         }
         // perform local searching
-        datas.forEach(function(data) {
+        datas.forEach(function (data) {
           var isMatch = true;
           var content_index = [];
           if (!data.title || data.title.trim() === '') {
@@ -59,7 +58,7 @@ var searchFunc = function(path, search_id, content_id) {
           var first_occur = -1;
           // only match artiles with not empty contents
           if (data_content !== '') {
-            keywords.forEach(function(keyword, i) {
+            keywords.forEach(function (keyword, i) {
               index_title = data_title.indexOf(keyword);
               index_content = data_content.indexOf(keyword);
 
@@ -80,7 +79,7 @@ var searchFunc = function(path, search_id, content_id) {
           }
           // show search results
           if (isMatch) {
-            str += "<li><a href='/" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
             var content = data.content.trim().replace(/<[^>]+>/g, "");
             if (first_occur >= 0) {
               // cut out 100 characters
@@ -102,7 +101,7 @@ var searchFunc = function(path, search_id, content_id) {
               var match_content = content.substr(start, end);
 
               // highlight all keywords
-              keywords.forEach(function(keyword) {
+              keywords.forEach(function (keyword) {
                 var regS = new RegExp(keyword, "gi");
                 match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
               });
@@ -114,9 +113,9 @@ var searchFunc = function(path, search_id, content_id) {
         });
         str += "</ul>";
         if (str.indexOf('<li>') === -1) {
-          return $resultContent.innerHTML = BTN + "<ul><span class='local-search-empty'>没有找到内容，更换下搜索词试试吧~<span></ul>";
+          return $resultContent.innerHTML =  "<ul><span class='local-search-empty'>没有找到内容，更换下搜索词试试吧~<span></ul>";
         }
-        $resultContent.innerHTML = BTN + str;
+        $resultContent.innerHTML =  str;
       });
     }
   });
