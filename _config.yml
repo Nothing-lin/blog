@@ -106,14 +106,14 @@ deploy:
   type: git
   repo: git@github.com:Nothing-lin/blog.git
   branch: master
-  
-  
+
+
   # 备份我的hexo博客
 backup:
     type: git
     theme: coolshell
     repository:
-       github: git@github.com:Nothing-lin/blog.git,branchName
+       github: https://github.com/Nothing-lin/blog.git,branchName
 
 # hexo-neat
 # md博文压缩
