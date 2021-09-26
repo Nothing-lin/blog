@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>remote: Support for password authentication was removed on August 13, 2021.</title>
+      <link href="2021/09/26/GitHub/remote-Support-for-password-authentication-was-removed-on-August-13-2021/"/>
+      <url>2021/09/26/GitHub/remote-Support-for-password-authentication-was-removed-on-August-13-2021/</url>
+      
+        <content type="html"><![CDATA[<h1 id="发现错误"><a href="#发现错误" class="headerlink" title="发现错误"></a>发现错误</h1><p>我在写hexo博客的时候一般都有一个备份的习惯，就在这次我完成了Nothinglin主题的开发时，将博客主题移至现在这个博客中进行发布且备份时发现，<code>hexo b</code>不能正常备份到我的GitHub仓库中的brandName分支上。</p><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/9/26/20210926160202.png" alt="image-20210926153905171"></p><p>首先肯定的是这次备份失败了，但是是什么原因导致失败的呢？仔细阅读了一下那几句英语发现：</p><p><code>remote: Support for password authentication was removed on August 13, 2021.</code></p><blockquote><p>2021年8月13号开始，GitHub客户端不支持密码登录了，我们在客户端不能用密码进行登录验证了，必须要创建一个token指令替代密码！！</p></blockquote><h1 id="错误分析"><a href="#错误分析" class="headerlink" title="错误分析"></a>错误分析</h1><p>一开始没有发现：</p><p><code>Please use a personal access token instead</code></p><p>这句话，也就是说用token替换掉密码来进行登录，所以我遇到问题的第一反应就是找度娘。等我把报错语句进行搜索之后发现了一篇处理此问题的博文：</p><blockquote><p><a href="https://blog.csdn.net/weixin_41010198/article/details/119698015">github开发人员在七夕搞事情：remote: Support for password authentication was removed on August 13, 2021.</a></p></blockquote><p>按照他的方法进行处理之后，我的hexo博客也可以进行正常备份了！</p><h1 id="处理错误"><a href="#处理错误" class="headerlink" title="处理错误"></a>处理错误</h1><h3 id="创建新的token"><a href="#创建新的token" class="headerlink" title="创建新的token"></a>创建新的token</h3><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/9/26/20210926160208.png" alt="image-20210926154826114"></p><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/9/26/20210926160212.png" alt="image-20210926154943316"></p><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/9/26/20210926160217.png" alt="image-20210926155045222"></p><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/9/26/20210926160220.png" alt="image-20210926155315585"></p><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/9/26/20210926160224.png" alt="image-20210926155440381"></p><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/9/26/20210926160228.png" alt="image-20210926155619130"></p><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/9/26/20210926160231.png" alt="image-20210926155736722"></p><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/9/26/20210926160235.png" alt="image-20210926155818849"></p><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/9/26/20210926160239.png" alt="image-20210926160013617"></p><p>所以到这里就差不多解决了这个问题了，为了防止以后还会出现这种情况，在这里以博客的形式记录下来了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> GitHub收集录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> github报错 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo主题coolshell使用说明</title>
       <link href="2021/05/02/Hexo/Hexo%E4%B8%BB%E9%A2%98coolshell%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/"/>
       <url>2021/05/02/Hexo/Hexo%E4%B8%BB%E9%A2%98coolshell%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</url>
@@ -23,19 +48,6 @@
             <tag> Hexo </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="2016/06/01/hello-world/"/>
-      <url>2016/06/01/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><a id="more"></a><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre data-enlighter-language="bash">$ hexo new "My New Post"</pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre data-enlighter-language="bash">$ hexo server</pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre data-enlighter-language="bash">$ hexo generate</pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre data-enlighter-language="java">$ hexo deploy</pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p><blockquote><p>嘿嘿，哈哈哈</p></blockquote><p><strong>这是测试粗体字</strong></p><details><summary>第02天的面试题与练习题</summary>    <div class="row">        <embed src="https://nothinglin-space.my-free.workers.dev/0:/30%E5%A4%A9Java%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/day02/%E5%B0%9A%E7%A1%85%E8%B0%B7_%E5%AE%8B%E7%BA%A2%E5%BA%B7_%E7%AC%AC1%E7%AB%A0%E8%8A%82%E7%BB%83%E4%B9%A0_Java%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0.pdf" width="100%" height="700" type="application/pdf">    </div>    </details>]]></content>
-      
-      
       
     </entry>
     
