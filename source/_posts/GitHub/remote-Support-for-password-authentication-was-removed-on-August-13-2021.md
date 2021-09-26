@@ -28,7 +28,7 @@ categories: GitHub收集录
 
 > 2021年8月13号开始，GitHub客户端不支持密码登录了，我们在客户端不能用密码进行登录验证了，必须要创建一个token指令替代密码！！
 
-
+<br/>
 
 # 错误分析
 
@@ -42,9 +42,7 @@ categories: GitHub收集录
 
 按照他的方法进行处理之后，我的hexo博客也可以进行正常备份了！
 
-
-
-
+<br/>
 
 # 处理错误
 
@@ -67,6 +65,8 @@ categories: GitHub收集录
 ![image-20210926155440381](https://NothingLin.coding.net/p/picture/d/picture/git/raw/master/2021/9/26/20210926160224.png)
 
 
+
+### 重新备份和登录
 
 ![image-20210926155619130](https://NothingLin.coding.net/p/picture/d/picture/git/raw/master/2021/9/26/20210926160228.png)
 
