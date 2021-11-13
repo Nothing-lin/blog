@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://nothinglin.ml/2021/11/13/Git/%E4%BD%BF%E7%94%A8idea%E9%85%8D%E7%BD%AEGitHub%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</loc>
+    <lastmod>2021-11-13</lastmod>
+  </url>
+  <url>
     <loc>https://nothinglin.ml/2021/09/26/GitHub/remote-Support-for-password-authentication-was-removed-on-August-13-2021/</loc>
     <lastmod>2021-09-26</lastmod>
   </url>
