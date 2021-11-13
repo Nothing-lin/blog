@@ -6,7 +6,7 @@
   <link href="https://nothinglin.ml/atom.xml" rel="self"/>
   
   <link href="https://nothinglin.ml/"/>
-  <updated>2021-11-13T13:53:20.305Z</updated>
+  <updated>2021-11-13T14:09:25.507Z</updated>
   <id>https://nothinglin.ml/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>IDEA新建时没有java class选项</title>
+    <link href="https://nothinglin.ml/2021/11/13/IDEA%E6%96%B0%E5%BB%BA%E6%97%B6%E6%B2%A1%E6%9C%89java-class%E9%80%89%E9%A1%B9/"/>
+    <id>https://nothinglin.ml/2021/11/13/IDEA%E6%96%B0%E5%BB%BA%E6%97%B6%E6%B2%A1%E6%9C%89java-class%E9%80%89%E9%A1%B9/</id>
+    <published>2021-11-13T14:07:53.000Z</published>
+    <updated>2021-11-13T14:09:25.507Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="IDEA新建时没有java-class选项"><a href="#IDEA新建时没有java-class选项" class="headerlink" title="IDEA新建时没有java class选项"></a>IDEA新建时没有java class选项</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>很奇怪，我在使用idea创建了一个普通的Java项目的时候我发现，在我想要新建一个java文件的时候，我右键新建发现没有Java class选项，这就让我很郁闷了。我建出来的文件格式是kotlin，虽然我要改后缀为java，但是平时创建Java类的时候就会自动把类名方法给写出来了，没了这个我就需要增加工作量了在使用idea的时候，所以在使用idea的时候这个问题是需要解决的。</p><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/9/9/20210909001754.png" alt="image-20210909001228458"></p><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/9/9/20210909001801.png" alt="image-20210909001308068"></p><h2 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h2><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/9/9/20210909001806.png" alt="image-20210909001355170"></p><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/9/9/20210909001811.png" alt="image-20210909001557173"></p><h2 id="最后处理结果"><a href="#最后处理结果" class="headerlink" title="最后处理结果"></a>最后处理结果</h2><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/9/9/20210909001818.png" alt="image-20210909001643833"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;IDEA新建时没有java-class选项&quot;&gt;&lt;a href=&quot;#IDEA新建时没有java-class选项&quot; class=&quot;headerlink&quot; title=&quot;IDEA新建时没有java class选项&quot;&gt;&lt;/a&gt;IDEA新建时没有java class选项&lt;/</summary>
+      
+    
+    
+    
+    <category term="IDEA开发工具" scheme="https://nothinglin.ml/categories/IDEA%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="IDEA使用问题" scheme="https://nothinglin.ml/tags/IDEA%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>使用idea配置GitHub远程仓库</title>
