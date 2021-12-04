@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://nothinglin.ml/friendcircle/index.html</loc>
+    
+    <lastmod>2021-12-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://nothinglin.ml/2021/11/13/IDEA%E6%96%B0%E5%BB%BA%E6%97%B6%E6%B2%A1%E6%9C%89java-class%E9%80%89%E9%A1%B9/</loc>
     
     <lastmod>2021-11-13</lastmod>
@@ -88,7 +95,7 @@
 
   <url>
     <loc>https://nothinglin.ml/</loc>
-    <lastmod>2021-11-21</lastmod>
+    <lastmod>2021-12-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -96,28 +103,28 @@
   
   <url>
     <loc>https://nothinglin.ml/tags/Git/</loc>
-    <lastmod>2021-11-21</lastmod>
+    <lastmod>2021-12-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://nothinglin.ml/tags/IDEA%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/</loc>
-    <lastmod>2021-11-21</lastmod>
+    <lastmod>2021-12-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://nothinglin.ml/tags/github%E6%8A%A5%E9%94%99/</loc>
-    <lastmod>2021-11-21</lastmod>
+    <lastmod>2021-12-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://nothinglin.ml/tags/Hexo/</loc>
-    <lastmod>2021-11-21</lastmod>
+    <lastmod>2021-12-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -126,28 +133,28 @@
   
   <url>
     <loc>https://nothinglin.ml/categories/Git/</loc>
-    <lastmod>2021-11-21</lastmod>
+    <lastmod>2021-12-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://nothinglin.ml/categories/IDEA%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2021-11-21</lastmod>
+    <lastmod>2021-12-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://nothinglin.ml/categories/GitHub%E6%94%B6%E9%9B%86%E5%BD%95/</loc>
-    <lastmod>2021-11-21</lastmod>
+    <lastmod>2021-12-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://nothinglin.ml/categories/CoolShell%E4%B8%BB%E9%A2%98%E8%AF%B4%E6%98%8E/</loc>
-    <lastmod>2021-11-21</lastmod>
+    <lastmod>2021-12-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
