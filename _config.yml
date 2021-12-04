@@ -111,7 +111,7 @@ deploy:
   # 备份我的hexo博客
 backup:
     type: git
-    theme: coolshell
+    theme: nothinglin
     repository:
        github: https://github.com/Nothing-lin/blog.git,branchName
 
