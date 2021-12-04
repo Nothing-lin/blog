@@ -451,15 +451,3 @@ a.title-href {
   font-weight: bold;
   margin-bottom: 10px;
 }
-
-.ui.slide.reveal:hover>.visible.content {
-  -webkit-transform: translateX(-100%) !important;
-  transform: translateX(-110%) !important;
-}
-.ui.slide.reveal>.hidden.content {
-    position: absolute!important;
-    left: 4px!important;
-    width: 95%!important;
-    -webkit-transform: translateX(100%)!important;
-    transform: translateX(100%)!important;
-}
