@@ -6,8 +6,8 @@ comments: true
 author: nothinglin
 sticky: 999
 date: 2021-05-02 22:22:00
-tags: Hexo
-categories: CoolShell主题说明
+tags: CoolShell主题说明
+categories: Hexo
 ---
 
 ### 前言
