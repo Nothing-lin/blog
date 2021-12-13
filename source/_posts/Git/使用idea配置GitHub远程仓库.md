@@ -4,7 +4,7 @@ index_img: /img/default.png
 author: nothinglin
 date: 2021-11-13 21:49:48
 tags: Git
-categories: Git
+categories: 开发工具
 ---
 
 # 使用idea配置GitHub远程仓库

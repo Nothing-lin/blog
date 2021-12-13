@@ -4,7 +4,7 @@ index_img: /img/default.png
 author: nothinglin
 date: 2021-11-13 22:07:53
 tags: IDEA使用问题
-categories: IDEA开发工具
+categories: 开发工具
 ---
 
 # IDEA新建时没有java class选项

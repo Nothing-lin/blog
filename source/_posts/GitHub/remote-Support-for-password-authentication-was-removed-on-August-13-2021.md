@@ -5,7 +5,7 @@ author: nothinglin
 sticky: false
 date: 2021-09-26 13:37:37
 tags: github报错
-categories: GitHub收集录
+categories: 问题收集
 ---
 
 

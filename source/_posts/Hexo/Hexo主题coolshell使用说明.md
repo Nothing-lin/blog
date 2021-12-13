@@ -7,7 +7,7 @@ author: nothinglin
 sticky: 999
 date: 2021-05-02 22:22:00
 tags: CoolShell主题说明
-categories: Hexo
+categories: 博客
 ---
 
 ### 前言
