@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>实用工具 | 本地电脑挂载阿里云盘</title>
+      <link href="2021/12/14/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7-%E6%9C%AC%E5%9C%B0%E7%94%B5%E8%84%91%E6%8C%82%E8%BD%BD%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98/"/>
+      <url>2021/12/14/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7-%E6%9C%AC%E5%9C%B0%E7%94%B5%E8%84%91%E6%8C%82%E8%BD%BD%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/12/14/20211214011913.png" alt="image-20211214002004307"></p><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>网盘资料库一直都有想弄，但是苦于没找到一个靠谱的网盘来存资料。百度网盘虽然容量大，但是速度真的惨不忍睹，那个限速真的离谱。一开始是超级会员的时候使用体验还是非常不错的，可是过期之后在上面的文件就要去找插件来下载了。而且网盘的资料放在上面进行分享，如果是非会员账号基本都会被劝退。所以每次找资料遇到放在百度网盘的这种都基本关掉找下一个，真的太麻烦了。</p><p>Onedrive可能也是大多数人推荐的，但是普通账号只有5G，教育类账号可能有几个T这样子，我有尝试用学校的邮箱注册了一个Onedrive账号，有1T大小左右的容量吧，但是你也知道，Onedrive的服务器是在海外的，这就意味着我们访问的速度也非常有限，而且我这个教育类账号就怕我毕业之后就被学校回收了，这样存里面的资料不就很危险吗？所以想想也放弃了Onedrive。</p><p>后面看到了有大佬开发了一些插件，可以不限速上传和下载文件，但是托管在google drive上面的。当时因为自己还是有能力访问google drive所以就尝试了，况且Google drive 也有15G，这也挺好的。插件好像叫啥来着，GOindex，搭建之后的界面就是这样子的，文件在Google drive里面进行管理，这一个界面是不支持文件管理的，只支持下载和预览。</p><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/12/14/20211214011919.png" alt="image-20211214003453012"></p><p>还有一个叫DGindex，这个是用来上传文件的：</p><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/12/14/20211214011924.png" alt="image-20211214003545857"></p><p>为了搞这个谷歌网盘，用了两个插件，一个用来预览和下载，一个用来上传。我们都知道正常情况下我们的文件是上传不去到谷歌网盘中的，不过这些插件利用了cloudflare workers的一些免费资源来实现在谷歌网盘上高速上传和下载。所以这也就挺吸引我的，我就搞了这么一个15G的个人网盘。其实一开始是搞了一个谷歌网盘无限容量的团队盘来着，后面不知道为什么自己消失了。消失就消失了吧，我也不敢在哪里存一些重要的资料，毕竟是谁也能查看的团队盘。</p><p>但是后面问题就来了，文件上传GDindex的bug就来了，不能上传大文件，那这有什么用，难道又要挂外网来上传吗？太麻烦了，所以今天我在博客中放入个人网盘的时候就测试了一下上传的问题，发现这个bug让我很不舒服，所以这个个人网盘我决定放弃了。</p><p>既然放弃旧爱，肯定是有了新欢。阿里云盘听说打着不限速这个特征来吸粉，而且不停的送容量。我就去了解了一下，其实我在阿里云盘内测的时候就有了解。今天算是了解的更细致一点吧，所以才决定使用它作为我的资料库。</p><p>内测的时候领了好几T的容量，不过那时因为说这些容量期限只有一年我就放弃了。要一年有何用？现在手机换号码了，以前的内测账号找不回来了，呜呜~</p><p>现在思想成熟多了之后，再次注册新的账号，开局有100G的空间容量。这时的我竟然满足了，我觉得100G存放一些书籍资料完全够用的。换做以前，已经弄了7T了好不满足，还想要更大的空间，这就是人性的贪婪吧。</p><p>100G挺好的了，关键还要看一下速度怎样。试了一下上传163M的电子书，都是秒传，可能也跟我的网速有关吧，下载基本跑满自己的网速，这就很好了。要是能分享的话，哪怕像百度网盘那样分享的话就更好了，试了一下分享，结果还真可以，完全就可以当个人网盘了。所以存资料就决定用阿里云盘了。再加上后面做了一些任务，现在已经获得了800多的永久空间容量，绝对够了。</p><h2 id="网友吐槽"><a href="#网友吐槽" class="headerlink" title="网友吐槽"></a>网友吐槽</h2><p>有的网友对阿里云盘进行吐槽，有的网友对阿里云盘进行质疑。这些都是可以理解地，毕竟前几个月前，我也是这个大军中的一员。</p><p><strong>吐槽</strong></p><p>吐槽什么呢？吐槽空间容量有期限，实际永久空间容量小，只有那么几百G，真的已经够了，我们不是视频剪辑的话或者喜欢收藏电影的话，完全是够用的，对于存放个人资料。</p><p><strong>质疑</strong></p><p>质疑什么呢？质疑未来阿里云盘会不会变卦，转回限速这种下三流手段收割韭菜吗？我也有些怀疑，不过我看了一些人的分析之后也没怎么担心这个问题了。唉，真这么搞也没办法，顶多到时冲个会员把资料下载回来转地方。</p><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/12/14/20211214012022.png" alt="image-20211214005843514"></p><h2 id="阿里云盘本地挂载"><a href="#阿里云盘本地挂载" class="headerlink" title="阿里云盘本地挂载"></a>阿里云盘本地挂载</h2><p>因为测试了阿里云盘的速度，果然是杠杠的。网上也有很多将阿里云盘挂载为本地磁盘的方法，相当于一个本地的云盘一样，和云端是同步。里面的文件可以直接打开运行，当然这也是比较吃网速的，毕竟是云端。就像Onedrive云端备份那样，不过速度肯定是更快的。</p><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/12/14/20211214011930.png" alt="image-20211214010222786"></p><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/12/14/20211214011934.gif" alt="radomCode"></p><p>上面是我已经完成挂载的效果图，是不是很爽？当然是在处理普通文件的时候会适合一些，视频一般都能打开直接看，虽然是存在阿里云盘上的，就看你的网速咯，网速好的话打开里面的文件就跟打开本地文件一样方便。</p><h2 id="如何挂载阿里云盘"><a href="#如何挂载阿里云盘" class="headerlink" title="如何挂载阿里云盘"></a>如何挂载阿里云盘</h2><blockquote><p><a href="https://www.52pojie.cn/thread-1490131-1-1.html">https://www.52pojie.cn/thread-1490131-1-1.html</a></p><p>这个网站是原帖，大家可以进入了解和下载对应的插件进行硬盘的挂载，其实不难就安装个软件，在软件里登录阿里云盘就挂载成功了。</p></blockquote><p><strong>插件下载</strong></p><p>下载我就不演示了，直接到原贴中的下载地址中下载一个安装包就行了。安装也不讲了，直接选择自己的路径安装就行了。</p><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/12/14/20211214011938.png" alt="image-20211214011147087"></p><p><strong>挂载</strong></p><p>安装成功后会进入一个界面</p><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/12/14/20211214011943.png" alt="image-20211214011431865"></p><p>一开始我们需要注册一个账号，在这个界面中的，也就是这个插件的账号，方便管理你的电脑挂载。</p><p>注册账号的时候就要你选择你要新建的挂载类型和盘符，本地挂载就选本地，选网盘好像没啥用，选网盘还不如直接下载阿里网盘的app，就选本地挂载。然后就选择阿里云盘进行挂载就行，扫码登录。</p><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/12/14/20211214011947.gif" alt="rade"></p><h2 id="完毕"><a href="#完毕" class="headerlink" title="完毕"></a>完毕</h2><p>上面的步骤走完后，你打开我的电脑就能看到新增的盘了。</p><p>这篇内容就写到这里吧~</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 资源与工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 实用工具 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>博客优化 | 给博客添加一个在线聊天系统插件“TIDIO”和谈谈我的感受</title>
       <link href="2021/12/08/Hexo/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96-%E7%BB%99%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E4%B8%80%E4%B8%AA%E5%9C%A8%E7%BA%BF%E8%81%8A%E5%A4%A9%E7%B3%BB%E7%BB%9F%E6%8F%92%E4%BB%B6-%E6%88%91%E7%9A%84%E6%84%9F%E5%8F%97/"/>
       <url>2021/12/08/Hexo/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96-%E7%BB%99%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E4%B8%80%E4%B8%AA%E5%9C%A8%E7%BA%BF%E8%81%8A%E5%A4%A9%E7%B3%BB%E7%BB%9F%E6%8F%92%E4%BB%B6-%E6%88%91%E7%9A%84%E6%84%9F%E5%8F%97/</url>
@@ -13,7 +38,7 @@
       
       <categories>
           
-          <category> Hexo </category>
+          <category> 博客 </category>
           
       </categories>
       
@@ -63,7 +88,7 @@
       
       <categories>
           
-          <category> IDEA开发工具 </category>
+          <category> 开发工具 </category>
           
       </categories>
       
@@ -88,7 +113,7 @@
       
       <categories>
           
-          <category> Git </category>
+          <category> 开发工具 </category>
           
       </categories>
       
@@ -113,7 +138,7 @@
       
       <categories>
           
-          <category> GitHub收集录 </category>
+          <category> 问题收集 </category>
           
       </categories>
       
@@ -138,7 +163,7 @@
       
       <categories>
           
-          <category> Hexo </category>
+          <category> 博客 </category>
           
       </categories>
       
