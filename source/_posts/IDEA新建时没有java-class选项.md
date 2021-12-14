@@ -1,5 +1,5 @@
 ---
-title: IDEA新建时没有java class选项
+title: IDEA问题 | IDEA新建时没有java class选项
 index_img: /img/default.png
 author: nothinglin
 date: 2021-11-13 22:07:53

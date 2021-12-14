@@ -1,5 +1,5 @@
 ---
-title: 使用idea配置GitHub远程仓库
+title: GIT使用 | 使用idea配置GitHub远程仓库
 index_img: /img/default.png
 author: nothinglin
 date: 2021-11-13 21:49:48

@@ -1,10 +1,7 @@
 ---
-title: Hexo主题coolshell使用说明
+title: 博客主题 | Hexo主题coolshell使用说明
 index_img: /img/default.png
-eyeCatchImage: /img/default.png
-comments: true
 author: nothinglin
-sticky: 999
 date: 2021-05-02 22:22:00
 tags: CoolShell主题说明
 categories: 博客

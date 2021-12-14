@@ -1,8 +1,6 @@
 ---
-title: 'remote: Support for password authentication was removed on August 13, 2021.'
-index_img: /img/default.png
+title: 'github登陆权限 | remote: Support for password authentication was removed on August 13, 2021.'
 author: nothinglin
-sticky: false
 date: 2021-09-26 13:37:37
 tags: github报错
 categories: 问题收集

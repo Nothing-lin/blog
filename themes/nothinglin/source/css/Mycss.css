@@ -573,3 +573,15 @@ div#artitalk_part1 {
 .counter-a {
   vertical-align: middle;
 }
+
+.counter-a {
+  vertical-align: middle;
+}
+
+a#tab-next:hover {
+  background: rgb(244 168 30 / 68%) !important;
+}
+
+a#category-next:hover {
+  background: rgb(244 168 30 / 68%) !important;
+}
