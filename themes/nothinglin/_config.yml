@@ -55,7 +55,7 @@ shareHref:
   jianshu: https://www.jianshu.com/u/a47e6b0d2a32
   github: https://github.com/Nothing-lin
   weibo:
-  rss:
+  rss: https://www.nothinglin.ml/atom.xml
 
 ## Feed
 rss: /atom.xml
