@@ -6,7 +6,4 @@ layout: comments
 ---
 
 
-
-## 留言
-
 如果你想跟Nothinglin说点什么，可以选择在此页面进行留言哦~

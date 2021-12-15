@@ -228,5 +228,9 @@
 
   .image-effect-fall-back {
     display: none;
-}
+  }
+
+  iframe {
+    width: 100%;
+  }
 }
