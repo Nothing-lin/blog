@@ -1,4 +1,4 @@
-requests_url = 'https://www.nothinglintwikoo.ml/api';
+requests_url = 'https://hexo-circle-of-friends-api-five-silk.vercel.app/api';
 const friend_link_circle = new Vue({
     el: '#friend_link_circle',
     data: {
