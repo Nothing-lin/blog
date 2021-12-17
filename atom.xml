@@ -6,7 +6,7 @@
   <link href="https://www.nothinglin.ml/atom.xml" rel="self"/>
   
   <link href="https://www.nothinglin.ml/"/>
-  <updated>2021-12-16T08:09:34.334Z</updated>
+  <updated>2021-12-17T07:42:16.040Z</updated>
   <id>https://www.nothinglin.ml/</id>
   
   <author>
@@ -17,9 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Mysql问题 | Mysql使用过程中常遇见的问题</title>
+    <link href="https://www.nothinglin.ml/2021/12/17/%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/Mysql%E9%97%AE%E9%A2%98-Mysql%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E4%B8%AD%E5%B8%B8%E9%81%87%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <id>https://www.nothinglin.ml/2021/12/17/%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/Mysql%E9%97%AE%E9%A2%98-Mysql%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E4%B8%AD%E5%B8%B8%E9%81%87%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98/</id>
+    <published>2021-12-17T07:18:57.000Z</published>
+    <updated>2021-12-17T07:42:16.040Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>在编程的过程中，我们经常会遇到代码错误之外的报错，那就是环境变量的报错。对于Mysql来说的话那就是对应的数据库版本的匹配问题。</p></blockquote><h2 id="数据库版本与数据库驱动版本的冲突"><a href="#数据库版本与数据库驱动版本的冲突" class="headerlink" title="数据库版本与数据库驱动版本的冲突"></a>数据库版本与数据库驱动版本的冲突</h2><p><strong>先来看看报错情况：</strong></p><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/12/17/20211217154155.png" alt="image-20211217152834130"></p><p>遇到报错的话第一时间就是先去百度搜索看看是哪里错误的，查询之后的搜索结果都把矛头指向了数据库驱动版本上。</p><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/12/17/20211217154200.png" alt="image-20211217153058826"></p><p>根据这个解决方案，最后我也把我的问题给解决了。</p><p><strong>参考资料：</strong></p><ul><li><a href="https://www.codeleading.com/article/51273377891/">解决Could not retrieve transaction read-only status from server</a></li></ul><h2 id="Mysql8-与mysql5-驱动名的差异"><a href="#Mysql8-与mysql5-驱动名的差异" class="headerlink" title="Mysql8+与mysql5+驱动名的差异"></a>Mysql8+与mysql5+驱动名的差异</h2><p>对于JavaWeb还有一个让我们摸不着头脑的问题就是数据库的驱动名，数据库5+的驱动名和数据库8+的驱动名是有区别的。比如：</p><p><strong>Mysql5+：</strong></p><pre data-enlighter-language="mysql">jdbc.driver=com.mysql.jdbc.Driver</pre><p><strong>Mysql8+:</strong></p><pre data-enlighter-language="">jdbc.driver=com.mysql.cj.jdbc.Driver</pre><p><img src="https://nothinglin.coding.net/p/picture/d/picture/git/raw/master/2021/12/17/20211217154206.png" alt="image-20211217153605041"></p><p>注意它们的区别，进行项目环境配置的时候一定要注意这些。</p><h2 id="数据库地址连接问题"><a href="#数据库地址连接问题" class="headerlink" title="数据库地址连接问题"></a>数据库地址连接问题</h2><p>有时候就真的莫名其妙，我也不知道怎么回事，比如下面的地址配置：</p><pre data-enlighter-language="mysql"># 数据库连接（nothinglin_note是数据库的名称）dbUrl=jdbc:mysql://localhost:3306/nothinglin_note</pre><p>有时候可以，有时候出问题，必须要加一些后缀才能保证少出问题，我现在还没搞明白，但是我下面这些后缀能够保证我目前的<strong>Mysql数据库6.0.11版本</strong>与<strong>jdbc驱动5.1.9版本</strong>能够不出问题。</p><pre data-enlighter-language="mysql"># 数据库连接（nothinglin_note是数据库的名称）dbUrl=jdbc:mysql://localhost:3306/nothinglin_note?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT&useSSL=false</pre><p>既然还不清楚就先记着先吧，后面能力上去之后再去分析原因。</p><p><strong>更新中····</strong></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;在编程的过程中，我们经常会遇到代码错误之外的报错，那就是环境变量的报错。对于Mysql来说的话那就是对应的数据库版本的匹配问题。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;数据库版本与数据库驱动版本的冲突&quot;&gt;&lt;a href=&quot;#数据库版本</summary>
+      
+    
+    
+    
+    <category term="问题收集" scheme="https://www.nothinglin.ml/categories/%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/"/>
+    
+    
+    <category term="Mysql" scheme="https://www.nothinglin.ml/tags/Mysql/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Arduino | 稀里糊涂选课-因课设苦逼入门</title>
-    <link href="https://www.nothinglin.ml/2021/12/15/Arduino-%E7%A8%80%E9%87%8C%E7%B3%8A%E6%B6%82%E9%80%89%E8%AF%BE-%E5%9B%A0%E8%AF%BE%E8%AE%BE%E8%8B%A6%E9%80%BC%E5%85%A5%E9%97%A8/"/>
-    <id>https://www.nothinglin.ml/2021/12/15/Arduino-%E7%A8%80%E9%87%8C%E7%B3%8A%E6%B6%82%E9%80%89%E8%AF%BE-%E5%9B%A0%E8%AF%BE%E8%AE%BE%E8%8B%A6%E9%80%BC%E5%85%A5%E9%97%A8/</id>
+    <link href="https://www.nothinglin.ml/2021/12/15/%E7%A1%AC%E4%BB%B6/Arduino-%E7%A8%80%E9%87%8C%E7%B3%8A%E6%B6%82%E9%80%89%E8%AF%BE-%E5%9B%A0%E8%AF%BE%E8%AE%BE%E8%8B%A6%E9%80%BC%E5%85%A5%E9%97%A8/"/>
+    <id>https://www.nothinglin.ml/2021/12/15/%E7%A1%AC%E4%BB%B6/Arduino-%E7%A8%80%E9%87%8C%E7%B3%8A%E6%B6%82%E9%80%89%E8%AF%BE-%E5%9B%A0%E8%AF%BE%E8%AE%BE%E8%8B%A6%E9%80%BC%E5%85%A5%E9%97%A8/</id>
     <published>2021-12-15T05:31:09.000Z</published>
     <updated>2021-12-16T08:09:34.334Z</updated>
     
@@ -43,8 +70,8 @@
   
   <entry>
     <title>实用工具 | 本地电脑挂载阿里云盘</title>
-    <link href="https://www.nothinglin.ml/2021/12/14/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7-%E6%9C%AC%E5%9C%B0%E7%94%B5%E8%84%91%E6%8C%82%E8%BD%BD%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98/"/>
-    <id>https://www.nothinglin.ml/2021/12/14/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7-%E6%9C%AC%E5%9C%B0%E7%94%B5%E8%84%91%E6%8C%82%E8%BD%BD%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98/</id>
+    <link href="https://www.nothinglin.ml/2021/12/14/%E8%B5%84%E6%BA%90%E4%B8%8E%E5%B7%A5%E5%85%B7/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7-%E6%9C%AC%E5%9C%B0%E7%94%B5%E8%84%91%E6%8C%82%E8%BD%BD%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98/"/>
+    <id>https://www.nothinglin.ml/2021/12/14/%E8%B5%84%E6%BA%90%E4%B8%8E%E5%B7%A5%E5%85%B7/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7-%E6%9C%AC%E5%9C%B0%E7%94%B5%E8%84%91%E6%8C%82%E8%BD%BD%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98/</id>
     <published>2021-12-13T16:17:01.000Z</published>
     <updated>2021-12-15T17:05:46.040Z</updated>
     
