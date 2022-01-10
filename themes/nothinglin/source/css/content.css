@@ -56,12 +56,9 @@ div.enlighter {
 }
 
 .content h1 {
-    border-bottom-width: 4px;
-    border-bottom-color: #D56464;
-    border-bottom-style: solid;
-    border-radius: 1.285714rem;
+    text-align: center;
     padding: 5px;
-    color: #333333;
+    color: #D56464;
     font-size: 25px;
     padding-left: 8px!important;
     margin-bottom: 35px;

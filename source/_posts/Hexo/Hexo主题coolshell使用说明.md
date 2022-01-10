@@ -1,11 +1,23 @@
 ---
-title: 博客主题 | Hexo主题coolshell使用说明
+title: 博客主题 | Hexo-theme-coolshell主题开发感想
 index_img: /img/default.png
 author: nothinglin
 date: 2021-05-02 22:22:00
 tags: CoolShell主题说明
 categories: 博客
 ---
+
+
+
+> 
+
+
+
+> **注意**：
+>
+> 该主题是我开发的另一个不完善的hexo博客主题并非nothinglin主题。
+>
+> https://github.com/Nothing-lin/hexo-theme-coolshell
 
 ### 前言
 

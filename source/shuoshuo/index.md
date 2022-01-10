@@ -6,7 +6,7 @@ layout: shuoshuo
 
 <!-- 引用 artitalk -->
 <script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-<script type="text/javascript" src="https://unpkg.com/artitalk"></script>
+<script type="text/javascript" src="https://unpkg.com/artitalk@3.2.2/artitalk.js"></script>
 <div id="artitalk_main"></div>
 
 <script>
