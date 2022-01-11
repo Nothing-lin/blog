@@ -2,7 +2,6 @@
 .enlighter-default.enlighter-v-standard.enlighter-t-enlighter.enlighter-hover.enlighter-linenumbers.enlighter-overflow-scroll {
   background-color: #F5F2F0;
   border-style: solid;
-  border-width: 2px;
 }
 
 .enlighter-t-enlighter.enlighter-linenumbers div.enlighter>div::before {
@@ -38,7 +37,6 @@ div.enlighter {
 }
 
 .content img {
-  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
   border-radius: .28571429rem;
   margin: auto !important;
   width: 100%;
@@ -87,9 +85,8 @@ div.enlighter {
   padding: 15px 20px 15px 20px;
   line-height: 1.6;
   position: relative;
-  background: #F5F2F0;
+  background: #ffffffb8;
   text-align: justify;
-  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
   border-radius: .28571429rem;
 }
 

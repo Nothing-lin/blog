@@ -245,10 +245,455 @@ dbUrl=jdbc:mysql://localhost:3306/nothinglin_note?useUnicode=true&characterEncod
 >
 > 研究前先学内容：**SSM项目框架入门**
 
+下面的文件结构就是本次研究的仿天猫商城的核心代码文件。
+
+```txt
+src
+│  
+├─main
+│  ├─java
+│  │  └─cn
+│  │      └─wmyskxz
+│  │          ├─controller
+│  │          │      CategoryController.java
+│  │          │      ForeController.java
+│  │          │      OrderController.java
+│  │          │      PageController.java
+│  │          │      ProductController.java
+│  │          │      ProductImageController.java
+│  │          │      PropertyController.java
+│  │          │      PropertyValueController.java
+│  │          │      ReferalLinkController.java
+│  │          │      UserController.java
+│  │          │      
+│  │          ├─interceptor
+│  │          │      LoginInterceptor.java
+│  │          │      OtherInterceptor.java
+│  │          │      
+│  │          ├─mapper
+│  │          │      CategoryMapper.java
+│  │          │      OrderItemMapper.java
+│  │          │      OrderMapper.java
+│  │          │      ProductImageMapper.java
+│  │          │      ProductMapper.java
+│  │          │      PropertyMapper.java
+│  │          │      PropertyValueMapper.java
+│  │          │      ReferalLinkMapper.java
+│  │          │      ReviewMapper.java
+│  │          │      UserMapper.java
+│  │          │      
+│  │          ├─pojo
+│  │          │      Category.java
+│  │          │      CategoryExample.java
+│  │          │      Order.java
+│  │          │      OrderExample.java
+│  │          │      OrderItem.java
+│  │          │      OrderItemExample.java
+│  │          │      Product.java
+│  │          │      ProductExample.java
+│  │          │      ProductImage.java
+│  │          │      ProductImageExample.java
+│  │          │      Property.java
+│  │          │      PropertyExample.java
+│  │          │      PropertyValue.java
+│  │          │      PropertyValueExample.java
+│  │          │      ReferalLink.java
+│  │          │      ReferalLinkExample.java
+│  │          │      Review.java
+│  │          │      ReviewExample.java
+│  │          │      User.java
+│  │          │      UserExample.java
+│  │          │      
+│  │          └─service
+│  │                  CategoryService.java
+│  │                  CategoryServiceImpl.java
+│  │                  OrderItemService.java
+│  │                  OrderItemServiceImpl.java
+│  │                  OrderService.java
+│  │                  OrderServiceImpl.java
+│  │                  ProductImageService.java
+│  │                  ProductImageServiceImpl.java
+│  │                  ProductService.java
+│  │                  ProductServiceImpl.java
+│  │                  PropertyService.java
+│  │                  PropertyServiceImpl.java
+│  │                  PropertyValueService.java
+│  │                  PropertyValueServiceImpl.java
+│  │                  ReferalLinkService.java
+│  │                  ReferalLinkServiceImpl.java
+│  │                  ReviewService.java
+│  │                  ReviewServiceImpl.java
+│  │                  UserService.java
+│  │                  UserServiceImpl.java
+│  │                  
+│  ├─resources
+│  │  │  generatorConfig.xml
+│  │  │  jdbc.properties
+│  │  │  logback.xml
+│  │  │  spring-mvc.xml
+│  │  │  spring-mybatis.xml
+│  │  │  
+│  │  └─mapper
+│  │          CategoryMapper.xml
+│  │          OrderItemMapper.xml
+│  │          OrderMapper.xml
+│  │          ProductImageMapper.xml
+│  │          ProductMapper.xml
+│  │          PropertyMapper.xml
+│  │          PropertyValueMapper.xml
+│  │          ReferalLinkMapper.xml
+│  │          ReviewMapper.xml
+│  │          UserMapper.xml
+│  │          
+│  └─webapp
+│      │  index.jsp
+│      │  
+│      ├─assets
+│      │  ├─css
+│      │  │      bootstrap.css
+│      │  │      custom-styles.css
+│      │  │      font-awesome.css
+│      │  │      
+│      │  ├─font-awesome
+│      │  │  └─fonts
+│      │  │          fontawesome-webfontba72.eot
+│      │  │          fontawesome-webfontba72.svg
+│      │  │          fontawesome-webfontba72.ttf
+│      │  │          fontawesome-webfontba72.woff
+│      │  │          fontawesome-webfontd41d.eot
+│      │  │          
+│      │  ├─fonts
+│      │  │      glyphicons-halflings-regular.eot
+│      │  │      glyphicons-halflings-regular.svg
+│      │  │      glyphicons-halflings-regular.ttf
+│      │  │      glyphicons-halflings-regular.woff
+│      │  │      glyphicons-halflings-regulard41d.eot
+│      │  │      
+│      │  └─js
+│      │      │  bootstrap.min.js
+│      │      │  custom-scripts.js
+│      │      │  custom.js
+│      │      │  jquery-1.10.2.js
+│      │      │  jquery.metisMenu.js
+│      │      │  
+│      │      ├─dataTables
+│      │      │      dataTables.bootstrap.css
+│      │      │      dataTables.bootstrap.js
+│      │      │      jquery.dataTables.js
+│      │      │      
+│      │      └─morris
+│      │              morris-0.4.3.min.css
+│      │              morris.js
+│      │              raphael-2.1.0.min.js
+│      │              
+│      ├─css
+│      │  ├─bootstrap
+│      │  │  ├─3.3.6
+│      │  │  │      bootstrap-theme.css
+│      │  │  │      bootstrap-theme.css.map
+│      │  │  │      bootstrap-theme.min.css
+│      │  │  │      bootstrap-theme.min.css.map
+│      │  │  │      bootstrap.css
+│      │  │  │      bootstrap.css.map
+│      │  │  │      bootstrap.min.css
+│      │  │  │      bootstrap.min.css.map
+│      │  │  │      
+│      │  │  └─fonts
+│      │  │          glyphicons-halflings-regular.eot
+│      │  │          glyphicons-halflings-regular.svg
+│      │  │          glyphicons-halflings-regular.ttf
+│      │  │          glyphicons-halflings-regular.woff
+│      │  │          glyphicons-halflings-regular.woff2
+│      │  │          
+│      │  └─fore
+│      │          footer.css
+│      │          head.css
+│      │          imgAndInfo.css
+│      │          navigator.css
+│      │          style.css
+│      │          
+│      ├─img
+│      │  ├─fore
+│      │  │      7day.png
+│      │  │      alipay2wei.jpg
+│      │  │      buyflow.png
+│      │  │      carousel1.jpg
+│      │  │      carousel2.jpg
+│      │  │      carousel3.jpg
+│      │  │      carousel4.jpg
+│      │  │      cartNotSelected.png
+│      │  │      cartSelected.png
+│      │  │      comformPayFlow.png
+│      │  │      confirmOrderTmall.png
+│      │  │      copyRight1.jpg
+│      │  │      copyRight2.jpg
+│      │  │      creditcard.png
+│      │  │      decrease.png
+│      │  │      end.png
+│      │  │      footer1.png
+│      │  │      footer2.png
+│      │  │      footer3.png
+│      │  │      footer4.png
+│      │  │      hd.jpg
+│      │  │      ico-circle.png
+│      │  │      increase.png
+│      │  │      leaveMessage.png
+│      │  │      li_dot.png
+│      │  │      loginPage-background.jpg
+│      │  │      no-product.png
+│      │  │      orderFinish.png
+│      │  │      orderItemTmall.png
+│      │  │      paySuccess.png
+│      │  │      police-icon.png
+│      │  │      priceBackground.png
+│      │  │      promise.png
+│      │  │      qr-code.png
+│      │  │      reviewLight.png
+│      │  │      simpleLogo.png
+│      │  │      tmall-cat.png
+│      │  │      tmall-coupon.png
+│      │  │      tmall-international.png
+│      │  │      tmall-logo.png
+│      │  │      tmall-shop.png
+│      │  │      tmallbuy.png
+│      │  │      tmallLogo.png
+│      │  │      wangwang.gif
+│      │  │      warning.png
+│      │  │      ww-online.png
+│      │  │      
+│      │  └─product
+│      │      │  error.png
+│      │      │  
+│      │      └─1
+│      │              1.jpg
+│      │              
+│      ├─js
+│      │  ├─bootstrap
+│      │  │  └─3.3.6
+│      │  │          bootstrap.js
+│      │  │          bootstrap.min.js
+│      │  │          npm.js
+│      │  │          
+│      │  └─jquery
+│      │      └─2.0.0
+│      │              jquery.min.js
+│      │              
+│      └─WEB-INF
+│          │  web.xml
+│          │  
+│          └─views
+│              │  alipay.jsp
+│              │  bought.jsp
+│              │  buyPage.jsp
+│              │  cart.jsp
+│              │  confirmPay.jsp
+│              │  index.jsp
+│              │  loginPage.jsp
+│              │  orderConfirmedPage.jsp
+│              │  payed.jsp
+│              │  product.jsp
+│              │  productDetail.jsp
+│              │  registerPage.jsp
+│              │  registerSuccessPage.jsp
+│              │  reviewPage.jsp
+│              │  searchResult.jsp
+│              │  test.jsp
+│              │  
+│              ├─admin
+│              │      editCategory.jsp
+│              │      editProduct.jsp
+│              │      editProductImage.jsp
+│              │      editProperty.jsp
+│              │      editPropertyValue.jsp
+│              │      editUser.jsp
+│              │      index.jsp
+│              │      listCategory.jsp
+│              │      listLink.jsp
+│              │      listOrder.jsp
+│              │      listProduct.jsp
+│              │      listProperty.jsp
+│              │      listPropertyValue.jsp
+│              │      listUser.jsp
+│              │      
+│              └─include
+│                      footer.jsp
+│                      header.jsp
+│                      hot-word-con.jsp
+│                      mini-search.jsp
+│                      modal.jsp
+│                      search.jsp
+│                      top.jsp
+│                      
+└─test
+    └─java
+            FileTester.java
+            TestMybatisGenerator.java
+```
+
+
+
+## 一：如何设置首页访问？
+
+使用tomcat启动项目时，我们需要tomcat跳转到我们第一个编辑页面中，这要怎么实现？仿Tmall项目中是怎样实现的？ssm项目结构需要怎么配置这个问题？
+
+首先我要找到现目中的首页jsp文件，一般来说都是**index.jsp**。
+
+![image-20220111033301438](https://NothingLin.coding.net/p/picture/d/picture/git/raw/master/2022/1/11/20220111041336.png)
+
+这里有点引人深思，按照内容代码理解的话就是这个**index.jsp**文件内容重定向到**/home**这个地址上，这样的话需要去控制层（controller文件夹下）去找找看哪里有设置这个**/home**。
+
+![image-20220111033755010](https://NothingLin.coding.net/p/picture/d/picture/git/raw/master/2022/1/11/20220111041341.png)
+
+到这里我有一些疑惑就是，首页访问的是WEB-INF目录下的**index.jsp**文件还是view目录下的**index.jsp**文件？
+
+view目录下的**index.jsp**文件代码内容就是我们的首页内容，但是tomcat不应该是默认打开WEB-INF目录下的**index.jsp**文件作为首页的吗？首页内容怎么会变成view目录下的**index.jsp**文件代码内容？
+
+我在想，这个是使用ssm框架的，那么有一些配置会不会在xml配置文件中设置？再找找看····
+
+我好像记得ssm框架有个什么视图层，好像是springMVC，会不会在这个xm文件中配置了？
+
+![image-20220111035816526](https://NothingLin.coding.net/p/picture/d/picture/git/raw/master/2022/1/11/20220111041350.png)
+
+是不是这里的设置我还不清楚，需要实践证明一下。
+
+![image-20220111040208099](https://NothingLin.coding.net/p/picture/d/picture/git/raw/master/2022/1/11/20220111041355.png)
+
+![image-20220111040224257](https://NothingLin.coding.net/p/picture/d/picture/git/raw/master/2022/1/11/20220111041359.png)
+
+tomcat运行完成之后竟然第一个跳转到的页面时WEB-INF目录下的**index.jsp**中的内容，也就是说这里重定向到/home目录。
+
+那么就是说，springMVC中指定了view目录作为视图层，然后：
+
+![image-20220111040704295](https://NothingLin.coding.net/p/picture/d/picture/git/raw/master/2022/1/11/20220111041403.png)
+
+也就是/home路径下返回index，这个index其实应该指的是view目录下的index.jsp，我猜应该是这样。再看看其他的是不是这样，找个登录界面看看，对应的return返回值是不是view目录下的jsp文件名。
+
+![image-20220111041011435](https://NothingLin.coding.net/p/picture/d/picture/git/raw/master/2022/1/11/20220111041407.png)
+
+果然是这样子！
+
+> SpringMVC指定对应的jsp文件资源目录，然后在controller控制层中定义相应的访问路径，这个路径的返回值就是对应视图层中的jsp文件名。
+
+
+
+通过观察首页的功能，好像感觉挺单调的，有很多
 
 
 
 
 
+都是装饰用的。我大概数了一下好像，好像首页中的核心功能只有：**登录、注册、我的订单、购物车、搜索、商品展示**，其他的都是修饰用的。
+
+![image-20220111200347171](D:\工作区\typora截图\image-20220111200347171.png)
+
+
+
+## 二：如何展示商品列表？
+
+这个首页是在view目录下的index.jsp文件中的，找到对应的核心代码：
+
+```jsp
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8" isELIgnored="false" %>
+<%@include file="include/header.jsp" %>
+<%@include file="include/top.jsp" %>
+<%@include file="include/search.jsp" %>
+//商品显示功能
+<div style="clear: both;"></div>
+<div class="new-floor-con">
+    <div class="workArea">
+        <c:forEach items="${categories}" var="c" varStatus="sts">
+
+            <%-- 该分类下有产品才能显示 --%>
+            <c:if test="${!empty c.products}">
+                <%-- 默认只展示前五个分类的内容，多了页面太长 --%>
+                <c:if test="${sts.count<=5}">
+                    <div class="floor-line-con">
+                        <i class="color-mark"></i>
+                        <div class="floor-name">${c.name}</div>
+                        <br>
+                        <c:forEach items="${c.products}" var="p" varStatus="st">
+                            <c:if test="${st.count<=5}">
+                                <a class="grid" href="showProduct?product_id=${p.id}">
+                                    <div class="productItem">
+                                        <img class="floor-item-img" src="img/product/${p.id}/1.jpg">
+                                        <div class="floor-item-title">${p.name}</div>
+                                        <div class="floor-price">${p.price}</div>
+                                    </div>
+                                </a>
+                            </c:if>
+                        </c:forEach>
+
+                    </div>
+                    <div style="clear: both;"></div>
+                </c:if>
+            </c:if>
+        </c:forEach>
+        <div class="tm-end">
+            <img src="img/fore/end.png"/>
+        </div>
+    </div>
+</div>
+<div style="clear: both;"></div>
+
+
+<%@include file="include/footer.jsp" %>
+
+```
+
+关键的商品展示部分看下面：
+
+```jsp
+        <c:forEach items="${categories}" var="c" varStatus="sts">
+
+            <%-- 该分类下有产品才能显示 --%>
+            <c:if test="${!empty c.products}">
+                <%-- 默认只展示前五个分类的内容，多了页面太长 --%>
+                <c:if test="${sts.count<=5}">
+                    <div class="floor-line-con">
+                        <i class="color-mark"></i>
+                        <div class="floor-name">${c.name}</div>
+                        <br>
+                        <c:forEach items="${c.products}" var="p" varStatus="st">
+                            <c:if test="${st.count<=5}">
+                                <a class="grid" href="showProduct?product_id=${p.id}">
+                                    <div class="productItem">
+                                        <img class="floor-item-img" src="img/product/${p.id}/1.jpg">
+                                        <div class="floor-item-title">${p.name}</div>
+                                        <div class="floor-price">${p.price}</div>
+                                    </div>
+                                </a>
+                            </c:if>
+                        </c:forEach>
+
+                    </div>
+                    <div style="clear: both;"></div>
+                </c:if>
+            </c:if>
+        </c:forEach>
+```
+
+因为我有一点JavaWeb的基础，我知道这里${categories}是在控制层controller上通过httprequest和httprespond的方式传递一个数组值到前端页面上，${categories}就是一个按照分类排序的一个商品信息数组。
+
+![image-20220111230818682](https://NothingLin.coding.net/p/picture/d/picture/git/raw/master/2022/1/11/20220111233513.png)
+
+SSM的语法我还不是很清楚，但我知道这里是根据分类信息查找数据库，然后将查到的数据库内容封装到categories数组变量中，再传递回前端页面中去。
+
+**c:forEach**语法我的话并不是很熟悉，我知道这是一个遍历循环的标签，item就是我们要循环的数组，var相当于是每一项的一个统称，比如：1.id、2.id、3.id、···、var.id。
+
+varstatus是什么？我在想varstatus和var有什么不同？
+
+下面是我在网上找到的资料（[原文](https://www.iteye.com/blog/ocaicai-787053)）：
+
+![image-20220111231945422](https://NothingLin.coding.net/p/picture/d/picture/git/raw/master/2022/1/11/20220111233538.png)
+
+虽然我还是半懂不懂，不过上面的代码使用的就是varStatus.count来计算数组有多少条商品信息，商品列表展示只展示前5条。
+
+其实看到这里我大概就理解了本项目是如何实现商品列表的展示的，可能ssm的一些语法我还没掌握，但是我知道这个实现方法和Javaweb是一样的。后面对于ssm语法学习还会进行系统过一遍，到时根据这些方法来实战一遍。
+
+> 本次学习了解了c：foreach的varstatus属性，上面写的其实只是了解了后端数据如何传输到前端页面中而已。还有就是，后端是怎样查询数据库的呀？怎么封装商品信息的呀？等等这些问题需要等我把ssm基础过一遍之后才会深入这里代码的研究。
+
+> 事时上到这里，大概也就明白了什么是控制层controller，也就是后端用来跟前端交流的一个层面，暂时知道这些就够了。
 
 **持续更新中····**
+
