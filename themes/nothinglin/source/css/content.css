@@ -32,7 +32,7 @@ div.enlighter {
   width: 10px;
 }
 
-.container-toc.enlighter-default::-webkit-scrollbar{
+.container-toc.enlighter-default::-webkit-scrollbar {
   width: 0px !important;
 }
 
@@ -49,30 +49,36 @@ div.enlighter {
 }
 
 .post-rating p {
-    font-size: 16px;
-    text-align: center;
+  font-size: 16px;
+  text-align: center;
 }
 
 .content h1 {
-    text-align: center;
-    padding: 5px;
-    color: #D56464;
-    font-size: 25px;
-    padding-left: 8px!important;
-    margin-bottom: 35px;
-}
-.content h2 {
-    font-size: 22px;
-    margin-top: 45px;
-    border-bottom-style: solid;
-    border-bottom-width: 0.5px;
-    border-bottom-color: #d2d2d2;
-    padding-bottom: 15px;
-    margin-bottom: 20px;
+  text-align: center;
+  padding: 5px;
+  color: #333333;
+  font-size: 30px;
+  padding-left: 8px !important;
+  margin-bottom: 25px;
+  margin-top: 50px;
 }
 
-.content blockquote p{
-  font-size: 14px;
+.content h2 {
+  font-size: 30px;
+  margin-top: 100px;
+  border-bottom-style: solid;
+  border-bottom-width: 0.5px;
+  border-bottom-color: #d2d2d2;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.content h3 {
+  color: #D56464;
+}
+
+.content blockquote p {
+  font-size: 18px;
 }
 
 .content blockquote {
@@ -85,7 +91,7 @@ div.enlighter {
   padding: 15px 20px 15px 20px;
   line-height: 1.6;
   position: relative;
-  background: #ffffffb8;
+  background: #5656561f;
   text-align: justify;
   border-radius: .28571429rem;
 }
@@ -100,24 +106,25 @@ div.enlighter {
 }
 
 .content ul {
-  padding-left: 30px !important;
-  color: #939393;
-  border-radius: 8px;
-  border: solid 2px #e0e0e0;
-  padding: 15px;
-  background-color: #F5F2F0;
-  color: #777777 !important;
+  font-size: 18px;
+}
+
+.content li {
+  margin-top: 10px;
 }
 
 .content strong {
   font-weight: bold;
   padding: 1px 5px 1.5px 5px;
   border-radius: 2px;
-  color: #d56464;
 }
 
-.page-prev-next{
+.page-prev-next {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.enlighter span {
+    font-size: 15px!important;
 }
