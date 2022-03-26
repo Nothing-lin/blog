@@ -684,3 +684,8 @@ a#category-next:hover {
 .share-via-pinterest {
   background-color: #ffffff;
 }
+
+.image-effect-fall-back .image-layer img {
+    height: 100%;
+    width: 129%;
+}
